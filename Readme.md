@@ -1,7 +1,7 @@
 # Личный проект «Седона» 
 
 * Студент: [Ольга Разживина](https://up.htmlacademy.ru/adaptive/26/user/2111999).
-* Наставник: `Антон Попов` (https://htmlacademy.ru/profile/joker).
+* Наставник: `Anton Popov`.
 
 ---
 
