@@ -9,8 +9,8 @@
 <body class="page__body">
   <header class="header">
 
-    <a class="header__main-logo main-logo" href="index.html">
-      <img class="main-logo__image" src="images/header-logo.svg" width="185" height="96"
+    <a class="header__main-logo" href="index.html">
+      <img class="header__main-logo-image" src="images/mobile/header-logo.svg" width="185" height="96"
         alt="Логотип сайта городка Седона">
     </a>
 
@@ -35,18 +35,23 @@
         </ul>
       </div>
     </nav>
+    <section class="header__main-image main-image">
+      <div class="main-image__wrapper">
+        <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+        <img class="main-image__slogan slogan slogan--abbreviated" src="images/mobile/slogan-abbreviated.svg"
+          width="282" height="214" alt="SEDONA">
+      </div>
+    </section>
   </header>
 
-  <main class="main-conteiner">
-    <section class="main-image">
-      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-      <img class="main-image__slogan slogan" src="images/slogan-cut.svg" width="282" height="214" alt="SEDONA">
-    </section>
+  <main class="form-section-conteiner">
+    <h2 class="visually-hidden">Форма отзыва о посещенных достопримечательностях</h2>
 
     <section class="feedback-section">
       <div class="feedback__wrapper">
-        <h2 class="feedback-section__title">Оставьте свой отзыв</h2>
-        <p class="feedback-section__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о них,
+        <h2 class="feedback-section__title title-section-theme">Оставьте свой отзыв</h2>
+        <p class="feedback-section__subtitle subtitle-section-theme">Помогите нашим отелям стать лучше! Оставьте отзыв о
+          них,
           а также о посещенных вами достопримечательностях</p>
         <form class="feedback-section__form feedback-form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="feedback-form__wrapper present-wrapper">
@@ -55,21 +60,26 @@
               <ul class="present__list personal-information">
 
                 <li class="personal-information__item">
-                  <label class="personal-information__control personal-information__control--required">ИМЯ:
-                    <input class="personal-information__control-input" type="text" name="name" value="Петр" required>
+                  <label class="personal-information__control personal-information__control--required">
+                    <span class="personal-information__control-label control-label">ИМЯ:</span>
+                    <input class="personal-information__control-input control-input" type="text" name="name"
+                      value="Петр" required>
                   </label>
                 </li>
 
                 <li class="personal-information__item">
-                  <label class="personal-information__control personal-information__control--required">ФАМИЛИЯ:
-                    <input class="personal-information__control-input" type="text" name="surname" value="Пустота"
-                      required>
+                  <label class="personal-information__control personal-information__control--required">
+                    <span class="personal-information__control-label control-label">ФАМИЛИЯ:</span>
+                    <input class="personal-information__control-input control-input" type="text" name="surname"
+                      value="Пустота" required>
                   </label>
                 </li>
 
                 <li class="personal-information__item">
-                  <label class="personal-information__control">ОТЧЕСТВО:
-                    <input class="personal-information__control-input" type="text" name="patronymic" value="Викторович">
+                  <label class="personal-information__control">
+                    <span class="personal-information__control-label control-label">ОТЧЕСТВО:</span>
+                    <input class="personal-information__control-input control-input" type="text" name="patronymic"
+                      value="Викторович">
                   </label>
                 </li>
               </ul>
@@ -80,23 +90,28 @@
               <ul class="present__list personal-information">
 
                 <li class="personal-information__item">
-                  <label class="personal-information__control personal-information__control--required">КОНТАКТНЫЙ
-                    ТЕЛЕФОН:
-                    <input class="personal-information__control-input" type="tel" name="telephone" required
-                      placeholder="Введите телефон">
+                  <label class="personal-information__control personal-information__control--required">
+                    <span class="personal-information__control-label control-label">КОНТАКТНЫЙ ТЕЛЕФОН
+                      :</span>
+                    <input class="personal-information__control-input control-input" type="tel" name="telephone"
+                      required placeholder="Введите телефон">
                   </label>
                   <button class="personal-information__button personal-information__button--telephon-icon"
-                    type="button"></button>
+                    type="button">
+                    <span class="visually-hidden">Телефон</span>
+                  </button>
                 </li>
 
                 <li class="personal-information__item">
-                  <label class="personal-information__control personal-information__control--required">ЭЛЕКТРОННАЯ
-                    ПОЧТА:
-                    <input class="personal-information__control-input" type="email" name="email" required
+                  <label class="personal-information__control personal-information__control--required">
+                    <span class="personal-information__control-label control-label">ЭЛЕКТРОННАЯ ПОЧТА
+                      :</span>
+                    <input class="personal-information__control-input control-input" type="email" name="email" required
                       placeholder="Введите e-mail">
                   </label>
-                  <button class="personal-information__button personal-information__button--email-icon"
-                    type="button"></button>
+                  <button class="personal-information__button personal-information__button--mail-icon" type="button">
+                    <span class="visually-hidden">Почта</span>
+                  </button>
                 </li>
               </ul>
             </fieldset>
@@ -107,21 +122,26 @@
 
             <ul class="feeling__list contact-information">
               <li class="contact-information__item">
-                <label class="contact-information__control">Скорее положительное
-                  <input class="contact-information__control-input" type="radio" name="feeling" value="positive"
-                    checked>
+                <label class="contact-information__control">
+                  <span class="contact-information__control-label control-label">Скорее положительное</span>
+                  <input class="contact-information__control-input control-input-radio" type="radio" name="feeling"
+                    value="positive" checked>
                 </label>
               </li>
 
               <li class="contact-information__item">
-                <label class="contact-information__control">Скорее отрицательное
-                  <input class="contact-information__control-input" type="radio" name="feeling" value="negative">
+                <label class="contact-information__control">
+                  <span class="contact-information__control-label control-label">Скорее отрицательное</span>
+                  <input class="contact-information__control-input control-input-radio" type="radio" name="feeling"
+                    value="negative">
                 </label>
               </li>
 
               <li class="contact-information__item">
-                <label class="contact-information__control">Затрудняюсь ответить
-                  <input class="contact-information__control-input" type="radio" name="feeling" value="dont-know">
+                <label class="contact-information__control">
+                  <span class="contact-information__control-label control-label">Затрудняюсь ответить</span>
+                  <input class="contact-information__control-input control-input-radio" type="radio" name="feeling"
+                    value="dont-know">
                 </label>
               </li>
             </ul>
@@ -132,26 +152,33 @@
 
             <ul class="visited__list visited-places">
               <li class="visited-places__item">
-                <label class="visited-places__control">Мост Дьявола
-                  <input class="visited-places__control-input" type="checkbox" name="Devils-bridge" checked>
+                <label class="visited-places__control">
+                  <span class="visited-places__control-label control-label">Мост Дьявола</span>
+                  <input class="visited-places__control-input control-input-checkbox" type="checkbox"
+                    name="Devils-bridge" checked>
                 </label>
               </li>
 
               <li class="visited-places__item">
-                <label class="visited-places__control">Гора-Колокол
-                  <input class="visited-places__control-input" type="checkbox" name="Bell-mountain" checked>
+                <label class="visited-places__control">
+                  <span class="visited-places__control-label control-label">Гора-Колокол</span>
+                  <input class="visited-places__control-input control-input-checkbox" type="checkbox"
+                    name="Bell-mountain" checked>
                 </label>
               </li>
 
               <li class="visited-places__item">
-                <label class="visited-places__control">Слайд-парк
-                  <input class="visited-places__control-input" type="checkbox" name="Slide-park" checked>
+                <label class="visited-places__control">
+                  <span class="visited-places__control-label control-label">Слайд-парк</span>
+                  <input class="visited-places__control-input control-input-checkbox" type="checkbox" name="Slide-park"
+                    checked>
                 </label>
               </li>
 
               <li class="visited-places__item">
-                <label class="visited-places__control">Красные скалы
-                  <input class="visited-places__control-input" type="checkbox" name="Red-Rocks">
+                <label class="visited-places__control">
+                  <span class="visited-places__control-label control-label">Красные скалы</span>
+                  <input class="visited-places__control-input control-input-checkbox" type="checkbox" name="Red-Rocks">
                 </label>
               </li>
             </ul>
@@ -167,9 +194,11 @@
               </li>
             </ul>
           </fieldset>
-          <div class="feedback-form__footer footer-form">
+          <div class="feedback-form__footer">
             <button class="feedback__button footer-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
-            <span class="footer-form__text footer-form__text--required-mark">— обязательные поля</span>
+            <small class="footer-form__legend">
+              — обязательные поля
+            </small>
           </div>
         </form>
       </div>
@@ -220,23 +249,24 @@
     </footer>
 
     <div class="modal-conteiner">
-      <div class="modal-conteiner__modal modal-failure">
+      <div class="modal-conteiner__modal modal-failure modal-failure--active">
         <section class="modal-failure__content modal-content">
           <h2 class="modal-content__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
           <p class="modal-content__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
           </p>
-          <button class="modal-content__button button button-failure" type="button">ОК</button>
+          <button class="modal-content__button button button--button-close-modal" type="button">OK</button>
         </section>
       </div>
     </div>
 
     <div class="modal-conteiner">
-      <div class="modal-conteiner__modal modal-success">
+      <div class="modal-conteiner__modal modal-success modal-success--active">
         <section class="modal-failure__content modal-content">
           <h2 class="modal-content__title">ВАШ ОТЗЫВ ОТРАВЛЕН!</h2>
           <p class="modal-content__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
             мы опубликуем его на сайте.</p>
-          <button class="modal-content__button button button-success button--close-mark" type="button">ОК</button>
+          <button class="modal-content__button button button-success button--button-close-modal" type="button">ЗАКРЫТЬ
+            ОКНО</button>
         </section>
       </div>
     </div>
