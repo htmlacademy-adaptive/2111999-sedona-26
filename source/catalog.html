@@ -9,8 +9,8 @@
 <body class="page__body">
   <header class="header">
 
-    <a class="header__main-logo main-logo" href="index.html">
-      <img class="main-logo__image" src="images/header-logo.svg" width="185" height="96"
+    <a class="header__main-logo" href="index.html">
+      <img class="header__main-logo-image " src="images/mobile/header-logo.svg" width="185" height="96"
         alt="Логотип сайта городка Седона">
     </a>
 
@@ -35,19 +35,21 @@
         </ul>
       </div>
     </nav>
-  </header>
-  <main class="main-conteiner">
-
-    <section class="main-image">
-      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-      <img class="main-image__slogan slogan" src="images/slogan-cut.svg" width="282" height="214" alt="SEDONA">
+    <section class="header__main-image main-image">
+      <div class="main-image__wrapper">
+        <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+        <img class="main-image__slogan slogan slogan--abbreviated" src="images/mobile/slogan-abbreviated.svg"
+          width="282" height="214" alt="SEDONA">
+      </div>
     </section>
-
+  </header>
+  <main class="catalog-conteiner">
     <section class="gallery">
       <div class="gallery__wrapper">
 
-        <h2 class="gallery__title">Фото и видео</h2>
-        <p class="gallery__text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть о политике
+        <h2 class="gallery__title title-section-theme title-section-theme--accent">Фото и видео</h2>
+        <p class="gallery__subtitle subtitle-section-theme">Не можете решиться на путешествие из-за курса? Фотографии
+          помогут вам забыть о политике
           и экономике.</p>
 
         <ul class="gallery__photo photo">
@@ -55,13 +57,16 @@
           <li class="photo__item photo-card photo-card--favorite">
             <figure class="photo-card__box box-image">
               <a class="box-image__link-full-size" href="#">
-                <img class="box-image__image" src="images/foto-gallery/space.jpg" width="1200" height="400"
+                <img class="box-image__image" src="images/mobile/foto-gallery/space.jpg" width="280" height="280"
                   alt="Изображение дороги на фоне заката и гор">
               </a>
             </figure>
             <div class="layer-photo">
               <h3 class="layer-photo__caption">НЕРОДНЫЕ ПРОСТОРЫ</h3>
               <p class="layer-photo__author">Автор фото: <cite>Борис</cite></p>
+              <button class="layer-photo__button button-like" type="button">
+                <span class="visually-hidden">Нравится</span>
+              </button>
               <span class="layer-photo__like">1350</span>
             </div>
           </li>
@@ -69,13 +74,16 @@
           <li class="photo__item photo-card">
             <figure class="photo-card__box box-image">
               <a class="box-image__link-full-size" href="#">
-                <img class="box-image__image" src="images/foto-gallery/flora.jpg" width="400" height="267"
+                <img class="box-image__image" src="images/mobile/foto-gallery/flora.jpg" width="280" height="280"
                   alt="Местный цветущий кактус на фоне гор">
               </a>
             </figure>
             <div class="layer-photo">
               <h3 class="layer-photo__caption">МЕСТНАЯ РАСТИТЕЛЬНОСТЬ</h3>
               <p class="layer-photo__author">Автор фото: <cite>Сергей</cite></p>
+              <button class="layer-photo__button button-like" type="button">
+                <span class="visually-hidden">Нравится</span>
+              </button>
               <span class="layer-photo__like">143</span>
             </div>
           </li>
@@ -83,13 +91,16 @@
           <li class="photo__item photo-card">
             <figure class="photo-card__box box-image">
               <a class="box-image__link-full-size" href="#">
-                <img class="box-image__image" src="images/foto-gallery/road-to-north.jpg" width="400" height="267"
-                  alt="Серпантин в окружении леса">
+                <img class="box-image__image" src="images/mobile/foto-gallery/road-to-north.jpg" width="280"
+                  height="280" alt="Серпантин в окружении леса">
               </a>
             </figure>
             <div class="layer-photo">
               <h3 class="layer-photo__caption">ДОРОГА НА СЕВЕР</h3>
               <p class="layer-photo__author">Автор фото: <cite>Петр</cite></p>
+              <button class="layer-photo__button button-like" type="button">
+                <span class="visually-hidden">Нравится</span>
+              </button>
               <span class="layer-photo__like">96</span>
             </div>
           </li>
@@ -97,13 +108,16 @@
           <li class="photo__item photo-card">
             <figure class="photo-card__box box-image">
               <a class="box-image__link-full-size" href="#">
-                <img class="box-image__image" src="images/foto-gallery/devils-bridge.jpg" width="400" height="267"
-                  alt="Завораживающий вид на мост Дьявола">
+                <img class="box-image__image" src="images/mobile/foto-gallery/devils-bridge.jpg" width="280"
+                  height="280" alt="Завораживающий вид на мост Дьявола">
               </a>
             </figure>
             <div class="layer-photo">
               <h3 class="layer-photo__caption">МОСТ ДЬЯВОЛА</h3>
               <p class="layer-photo__author">Автор фото: <cite>Антон</cite></p>
+              <button class="layer-photo__button button-like" type="button">
+                <span class="visually-hidden">Нравится</span>
+              </button>
               <span class="layer-photo__like">254</span>
             </div>
           </li>
@@ -115,13 +129,17 @@
     <section class="video-presentation">
       <div class="video-presentation__wrapper">
         <h3 class="visually-hidden">Видео презентация</h3>
-        <p class="video-presentation__title">Все еще сомневаетесь?</p>
-        <p class="video-presentation__slogan">Смотрите видеопрезентацию и скорее за билетами, пока они не подорожали в
+        <p class="video-presentation__title title-section-theme">Все еще сомневаетесь?</p>
+        <p class="video-presentation__subtitle subtitle-section-theme">Смотрите видеопрезентацию и скорее за билетами,
+          пока они не подорожали в
           очередной раз!</p>
-        <video class="video-presentation__item video" poster="images/video-sedona.jpg" width="800" height="500">
+        <video class="video-presentation__item video" poster="images/mobile/catalog-foto-galary/video-poster-sedona.jpg"
+          width="280" height="177">
           <source src="#">
         </video>
-        <button class="video-presentation__button button-play" type="button"></button>
+        <button class="video-presentation__button button-play" type="button">
+          <span class=" visually-hidden">Запустить проигрыватель</span>
+        </button>
       </div>
     </section>
 
@@ -132,6 +150,7 @@
         <div class="page-footer__hashtag hashtag">
           <h4 class="visually-hidden">Хэштег VISIDSEDONA</h4>
           <a class="hashtag__link" href="https://twitter.com/hashtag/visitsedona">#VISITSEDONA</a>
+          <span class=" visually-hidden">#VISITSEDONA</span>
         </div>
 
         <div class="page-footer__social social">
