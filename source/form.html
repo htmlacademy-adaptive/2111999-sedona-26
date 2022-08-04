@@ -9,8 +9,8 @@
 <body class="page__body">
   <header class="header">
 
-    <a class="header__main-logo" href="index.html">
-      <img class="header__main-logo-image" src="images/mobile/header-logo.svg" width="185" height="96"
+    <a class="header__main-logo main-logo" href="index.html">
+      <img class="main-logo__image" src="images/header-logo.svg" width="185" height="96"
         alt="Логотип сайта городка Седона">
     </a>
 
@@ -19,7 +19,7 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
       <div class="navigation__wrapper">
-        <ul class="navigation__list">
+        <ul class="navigation__list site-navigation">
           <li class="navigation__item">
             <a class="navigation__link" href="index.html">ГЛАВНАЯ</a>
           </li>
@@ -35,11 +35,10 @@
         </ul>
       </div>
     </nav>
-    <section class="header__main-image main-image">
+    <section class="header__hero hero">
       <div class="main-image__wrapper">
         <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-        <img class="main-image__slogan slogan slogan--abbreviated" src="images/mobile/slogan-abbreviated.svg"
-          width="282" height="214" alt="SEDONA">
+        <img class="hero__slogan slogan" src="images/slogan-abbreviated.svg" width="229" height="39" alt="SEDONA">
       </div>
     </section>
   </header>
@@ -47,157 +46,132 @@
   <main class="form-section-conteiner">
     <h2 class="visually-hidden">Форма отзыва о посещенных достопримечательностях</h2>
 
-    <section class="feedback-section">
+    <section class="feedback">
       <div class="feedback__wrapper">
-        <h2 class="feedback-section__title title-section-theme">Оставьте свой отзыв</h2>
-        <p class="feedback-section__subtitle subtitle-section-theme">Помогите нашим отелям стать лучше! Оставьте отзыв о
+        <h2 class="feedback__title title-form">Оставьте свой отзыв</h2>
+        <p class="feedback__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о
           них,
           а также о посещенных вами достопримечательностях</p>
-        <form class="feedback-section__form feedback-form" action="https://echo.htmlacademy.ru/" method="get">
-          <div class="feedback-form__wrapper present-wrapper">
-            <fieldset class="feedback-form__present-section present">
-              <legend class="present__title feedback-form-title">Представьтесь:</legend>
-              <ul class="present__list personal-information">
+        <form class="feedback__form feedback-form" action="https://echo.htmlacademy.ru/" method="get">
+          <div class="feedback-form__group-wrapper">
 
-                <li class="personal-information__item">
-                  <label class="personal-information__control personal-information__control--required">
-                    <span class="personal-information__control-label control-label">ИМЯ:</span>
-                    <input class="personal-information__control-input control-input" type="text" name="name"
-                      value="Петр" required>
-                  </label>
-                </li>
+            <fieldset class="feedback-form__group">
+              <legend class="feedback-form__title title-form">Представьтесь:</legend>
 
-                <li class="personal-information__item">
-                  <label class="personal-information__control personal-information__control--required">
-                    <span class="personal-information__control-label control-label">ФАМИЛИЯ:</span>
-                    <input class="personal-information__control-input control-input" type="text" name="surname"
-                      value="Пустота" required>
-                  </label>
-                </li>
+              <p class="feedback-form__field-group field">
+                <label class="field__label field-label">ИМЯ*:
+                  <input class="field__input" type="text" name="name" value="Петр" required>
+                </label>
+              </p>
 
-                <li class="personal-information__item">
-                  <label class="personal-information__control">
-                    <span class="personal-information__control-label control-label">ОТЧЕСТВО:</span>
-                    <input class="personal-information__control-input control-input" type="text" name="patronymic"
-                      value="Викторович">
-                  </label>
-                </li>
-              </ul>
+              <p class="feedback-form__field-group field">
+                <label class="field__label field-label">ФАМИЛИЯ*:
+                  <input class="field__input" type="text" name="surname" value="Пустота" required>
+                </label>
+              </p>
+
+              <p class="feedback-form__field-group field">
+                <label class="field__label field-label">ОТЧЕСТВО:
+                  <input class="field__input" type="text" name="patronymic" value="Викторович">
+                </label>
+              </p>
             </fieldset>
 
-            <fieldset class="feedback-form__present-section present">
-              <legend class="present__title feedback-form-title">Контактная информация:</legend>
-              <ul class="present__list personal-information">
+            <fieldset class="feedback-form__group">
+              <legend class="feedback-form__title title-form">Контактная информация:</legend>
+              <p class="feedback-form__field-group field">
+                <label class="field__label field-label">Контактный телефон*:
+                  <input class="field__input" type="tel" name="telephone" required placeholder="Введите телефон">
+                </label>
+                <button class="feedback-form__button feedback-form__button--telephon-icon" type="button">
+                  <span class="visually-hidden">Телефон</span>
+                </button>
+              </p>
 
-                <li class="personal-information__item">
-                  <label class="personal-information__control personal-information__control--required">
-                    <span class="personal-information__control-label control-label">КОНТАКТНЫЙ ТЕЛЕФОН
-                      :</span>
-                    <input class="personal-information__control-input control-input" type="tel" name="telephone"
-                      required placeholder="Введите телефон">
-                  </label>
-                  <button class="personal-information__button personal-information__button--telephon-icon"
-                    type="button">
-                    <span class="visually-hidden">Телефон</span>
-                  </button>
-                </li>
-
-                <li class="personal-information__item">
-                  <label class="personal-information__control personal-information__control--required">
-                    <span class="personal-information__control-label control-label">ЭЛЕКТРОННАЯ ПОЧТА
-                      :</span>
-                    <input class="personal-information__control-input control-input" type="email" name="email" required
-                      placeholder="Введите e-mail">
-                  </label>
-                  <button class="personal-information__button personal-information__button--mail-icon" type="button">
-                    <span class="visually-hidden">Почта</span>
-                  </button>
-                </li>
-              </ul>
+              <p class="feedback-form__field-group field">
+                <label class="field__label field-label">Электронная почта*:
+                  <input class="field__input" type="email" name="email" required placeholder="Введите e-mail">
+                </label>
+                <button class="feedback-form__button feedback-form__button--mail-icon" type="button">
+                  <span class="visually-hidden">Почта</span>
+                </button>
+              </p>
             </fieldset>
           </div>
 
-          <fieldset class="feedback-form__feeling-section feeling">
-            <legend class="feeling__title feedback-form-title">Ваше общее впечатление:</legend>
+          <fieldset class="feedback-form__group">
+            <legend class="feedback-form__title title-form">Ваше общее впечатление:</legend>
 
-            <ul class="feeling__list contact-information">
-              <li class="contact-information__item">
-                <label class="contact-information__control">
-                  <span class="contact-information__control-label control-label">Скорее положительное</span>
-                  <input class="contact-information__control-input control-input-radio" type="radio" name="feeling"
-                    value="positive" checked>
+            <ul class="feedback-form__list feedback-form__radio">
+              <li class="feedback-form__item">
+                <label class="control radio">
+                  <span class="control__label control-label">Скорее положительное</span>
+                  <input class="control__input" type="radio" name="feeling" value="positive" checked>
                 </label>
               </li>
 
-              <li class="contact-information__item">
-                <label class="contact-information__control">
-                  <span class="contact-information__control-label control-label">Скорее отрицательное</span>
-                  <input class="contact-information__control-input control-input-radio" type="radio" name="feeling"
-                    value="negative">
+              <li class="feedback-form__item">
+                <label class="control radio">
+                  <span class="control__label control-label">Скорее отрицательное</span>
+                  <input class="control__input" type="radio" name="feeling" value="negative">
                 </label>
               </li>
 
-              <li class="contact-information__item">
-                <label class="contact-information__control">
-                  <span class="contact-information__control-label control-label">Затрудняюсь ответить</span>
-                  <input class="contact-information__control-input control-input-radio" type="radio" name="feeling"
-                    value="dont-know">
+              <li class="feedback-form__item">
+                <label class="control radio">
+                  <span class="control__label control-label">Затрудняюсь ответить</span>
+                  <input class="control__input" type="radio" name="feeling" value="dont-know">
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="feedback-form__visited-places-section visited">
-            <legend class="visited__title feedback-form-title">Посещенные достопримечательности:</legend>
+          <fieldset class="feedback-form__group">
+            <legend class="feedback-form__title title-form">Посещенные достопримечательности:</legend>
 
-            <ul class="visited__list visited-places">
-              <li class="visited-places__item">
-                <label class="visited-places__control">
-                  <span class="visited-places__control-label control-label">Мост Дьявола</span>
-                  <input class="visited-places__control-input control-input-checkbox" type="checkbox"
-                    name="Devils-bridge" checked>
+            <ul class="feedback-form__list feedback-form__checkbox">
+              <li class="feedback-form__item">
+                <label class="control checkbox">
+                  <span class="control__label control-label">Мост Дьявола</span>
+                  <input class="control__input" type="checkbox" name="Devils-bridge" checked>
                 </label>
               </li>
 
-              <li class="visited-places__item">
-                <label class="visited-places__control">
-                  <span class="visited-places__control-label control-label">Гора-Колокол</span>
-                  <input class="visited-places__control-input control-input-checkbox" type="checkbox"
-                    name="Bell-mountain" checked>
+              <li class="feedback-form__item">
+                <label class="control checkbox">
+                  <span class="control__label control-label">Гора-Колокол</span>
+                  <input class="control__input" type="checkbox" name="Bell-mountain" checked>
                 </label>
               </li>
 
-              <li class="visited-places__item">
-                <label class="visited-places__control">
-                  <span class="visited-places__control-label control-label">Слайд-парк</span>
-                  <input class="visited-places__control-input control-input-checkbox" type="checkbox" name="Slide-park"
-                    checked>
+              <li class="feedback-form__item">
+                <label class="control checkbox">
+                  <span class="control__label control-label">Слайд-парк</span>
+                  <input class="control__input" type="checkbox" name="Slide-park" checked>
                 </label>
               </li>
 
-              <li class="visited-places__item">
-                <label class="visited-places__control">
-                  <span class="visited-places__control-label control-label">Красные скалы</span>
-                  <input class="visited-places__control-input control-input-checkbox" type="checkbox" name="Red-Rocks">
+              <li class="feedback-form__item">
+                <label class="control checkbox">
+                  <span class="control__label control-label">Красные скалы</span>
+                  <input class="control__input" type="checkbox" name="Red-Rocks">
                 </label>
               </li>
             </ul>
           </fieldset>
 
-          <fieldset class="feedback-form__emotions-section emotions">
-            <legend class="emotions__title feedback-form-title">Опишите свои эмоции:</legend>
-
-            <ul class="emotions__list emotions-more">
-              <li class="emotions-more__item">
-                <textarea class="emotions-more__comment input-comment" name="comment"
-                  id="comment-field">Опишите подробно все свои восторги</textarea>
-              </li>
-            </ul>
+          <fieldset class="feedback-form__group">
+            <legend class="feedback-form__title title-form">Опишите свои эмоции:</legend>
+            <p class="feedback-form__field-group field">
+              <textarea class="feedback-form__textarea" name="comment"
+                id="comment-field">Опишите подробно все свои восторги</textarea>
+            </p>
           </fieldset>
+
           <div class="feedback-form__footer">
             <button class="feedback__button footer-form__button button" type="submit">ОТПРАВИТЬ ОТЗЫВ</button>
             <small class="footer-form__legend">
-              — обязательные поля
+              * — обязательные поля
             </small>
           </div>
         </form>
@@ -206,71 +180,68 @@
 
     <footer class="page-footer">
       <div class="page-footer__wrapper">
-        <h3 class="visually-hidden">Полезные ресурсы</h3>
 
-        <div class="page-footer__hashtag hashtag">
-          <h4 class="visually-hidden">Хэштег VISIDSEDONA</h4>
+        <section class="page-footer__hashtag hashtag">
+          <h3 class="visually-hidden">Хэштег VISIDSEDONA</h3>
           <a class="hashtag__link" href="https://twitter.com/hashtag/visitsedona">#VISITSEDONA</a>
-        </div>
+        </section>
 
-        <div class="page-footer__social social">
-          <h4 class="visually-hidden">Социальные сети</h4>
+        <section class="page-footer__social social">
+          <h3 class="visually-hidden">Мы в соцсетях</h3>
           <ul class="social__list">
             <li class="social__item">
-              <a class="social__icon social__icon--vkontakte" href="https://vk.com/htmlacademy">
+              <a class="social-link social-link--vkontakte" href="https://vk.com/htmlacademy">
                 <span class=" visually-hidden">В контакте</span>
               </a>
             </li>
             <li class="social__item">
-              <a class="social__icon social__icon--telegram" href="https://t.me/htmlacademy">
+              <a class="social-link social-link--telegram" href="https://t.me/htmlacademy">
                 <span class="visually-hidden">Телеграм</span>
               </a>
             </li>
-            <li class="social-item">
-              <a class="social__icon social__icon--youtube" href="www.youtube.com/user/htmlacademyru">
+            <li class="social__item">
+              <a class="social-link social-link--youtube" href="www.youtube.com/user/htmlacademyru">
                 <span class="visually-hidden">Ютуб</span>
               </a>
             </li>
           </ul>
-        </div>
+        </section>
 
-        <div class="page-footer__developer developer">
-          <h4 class="visually-hidden">Логотип разработчика сайта</h4>
-          <span class="developer__text">Разработано</span>
-          <a class="developer__logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <section class="page-footer__copyright copyright">
+          <h3 class="copyright__title">Разработано</h3>
+          <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="35" viewBox="0 0 27 35" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path
                 d="M13.6 0h-.1L0 1.4v24.7l13.5 8 13.4-8V1.4L13.6 0ZM25 12.1 13.5 5.3v-.1h-.1l-.1-.1v.1L1.9 12.1v-9l11.5-1.2L25 3.1v9ZM13.4 6.8l11.5 6.7-4.5 2.6-7.1-4.2v1.4l5.9 3.5-.9.5-5-3v1.4l3.8 2.3-.8.5-3-1.8v1.4l1.9 1.1-1.8 1.1L2 13.6l11.4-6.8ZM1.9 15.1l11.4 6.8v1l-7.9-4.7v1.4l8 4.8v1.1l-8-4.7v1.4l8 4.8 8.1-4.9v-5.2l3.4-2v10l-11.5 6.9L1.9 25v-9.9Z"
                 fill="#000" />
             </svg>
+            <span class="visually-hidden">html Academy</span>
           </a>
-        </div>
+        </section>
       </div>
     </footer>
 
     <div class="modal-conteiner">
       <div class="modal-conteiner__modal modal-failure modal-failure--active">
-        <section class="modal-failure__content modal-content">
-          <h2 class="modal-content__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
-          <p class="modal-content__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        <section class="modal-failure__content">
+          <h2 class="modal-failure__title">ЧТО-ТО ПОШЛО НЕ ТАК!</h2>
+          <p class="modal-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
           </p>
-          <button class="modal-content__button button button--button-close-modal" type="button">OK</button>
+          <button class="modal-failure__button button" type="button">OK</button>
         </section>
       </div>
     </div>
 
     <div class="modal-conteiner">
       <div class="modal-conteiner__modal modal-success modal-success--active">
-        <section class="modal-failure__content modal-content">
-          <h2 class="modal-content__title">ВАШ ОТЗЫВ ОТРАВЛЕН!</h2>
-          <p class="modal-content__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
+        <section class="modal-success__content">
+          <h2 class="modal-success__title">ВАШ ОТЗЫВ ОТРАВЛЕН!</h2>
+          <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
             мы опубликуем его на сайте.</p>
-          <button class="modal-content__button button button-success button--button-close-modal" type="button">ЗАКРЫТЬ
+          <button class="modal-success__button button button--background-layer" type="button">ЗАКРЫТЬ
             ОКНО</button>
         </section>
       </div>
     </div>
-
-
   </main>
 </body>
