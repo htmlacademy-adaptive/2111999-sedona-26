@@ -24,7 +24,7 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename("style.min.css"))
+    .pipe(rename("style.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -44,7 +44,7 @@ const html = () => {
 const scripts = () => {
   return gulp.src("source/js/script.js")
     .pipe(terser())
-    .pipe(rename("script.min.js"))
+    .pipe(rename("script.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
@@ -54,20 +54,20 @@ exports.scripts = scripts;
 // Images
 
 const optimizeImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
+  return gulp.src("source/images/**/*.{png,jpg,svg}")
     .pipe(imagemin([
       imagemin.mozjpeg({ progressive: true }),
       imagemin.optipng({ optimizationLevel: 3 }),
       imagemin.svgo()
     ]))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("build/images"))
 }
 
 exports.images = optimizeImages;
 
 const copyImages = () => {
-  return gulp.src("source/img/**/*.{png,jpg,svg}")
-    .pipe(gulp.dest("build/img"))
+  return gulp.src("source/images/**/*.{png,jpg,svg}")
+    .pipe(gulp.dest("build/images"))
 }
 
 exports.images = copyImages;
@@ -75,9 +75,9 @@ exports.images = copyImages;
 // WebP
 
 const createWebp = () => {
-  return gulp.src("source/img/**/*.{jpg,png}")
+  return gulp.src("source/images/**/*.{jpg,png}")
     .pipe(webp({ quality: 90 }))
-    .pipe(gulp.dest("build/img"))
+    .pipe(gulp.dest("build/images"))
 }
 
 exports.createWebp = createWebp;
@@ -85,12 +85,12 @@ exports.createWebp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src("source/img/icons/*.svg")
+  return gulp.src("source/images/icons/*.svg")
     .pipe(svgstore({
       inlineSvg: true
     }))
     .pipe(rename("sprite.svg"))
-    .pipe(gulp.dest("build/img"));
+    .pipe(gulp.dest("build/images"));
 }
 
 exports.sprite = sprite;
@@ -101,8 +101,8 @@ const copy = (done) => {
   gulp.src([
     "source/fonts/*.{woff2,woff}",
     "source/*.ico",
-    "source/img/**/*.svg",
-    "!source/img/icons/*.svg",
+    "source/images/**/*.svg",
+    "!source/images/icons/*.svg",
   ], {
     base: "source"
   })

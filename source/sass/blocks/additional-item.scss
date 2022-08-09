@@ -1,0 +1,12 @@
+.additional-item {
+  list-style-type: none;
+}
+
+.additional-item__title {
+  @extend%normalize;
+  margin-bottom: 16px;
+}
+
+.additional-item__description {
+  @extend%normalize;
+}

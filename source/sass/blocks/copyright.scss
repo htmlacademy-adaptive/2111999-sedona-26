@@ -1,0 +1,9 @@
+.copyright {
+  display: flex;
+  align-items: center;
+}
+
+.copyright__title {
+  @extend%normalize;
+  margin-right: 13px;
+}

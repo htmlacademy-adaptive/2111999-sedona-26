@@ -1,3 +1,32 @@
-body {
-  background: red;
-}
+@import "./global/variables.scss";
+@import "./global/fonts.scss";
+@import "./global/mixin.scss";
+@import "./global/templates.scss";
+@import "./global/visually-hidden.scss";
+@import "./blocks/page.scss";
+@import "./blocks/header.scss";
+@import "./blocks/navigation.scss";
+@import "./blocks/heading.scss";
+@import "./blocks/main-container.scss";
+@import "./blocks/hero.scss";
+@import "./blocks/advantages.scss";
+@import "./blocks/subheading.scss";
+@import "./blocks/advantages-list.scss";
+@import "./blocks/advantages-item";
+@import "./blocks/advantage-card";
+@import "./blocks/additional-list";
+@import "./blocks/additional-card";
+@import "./blocks/additional-item";
+@import "./blocks/search-section";
+@import "./blocks/button.scss";
+@import "./blocks/map-tablet.scss";
+@import "./blocks/page-footer.scss";
+@import "./blocks/hashtag.scss";
+@import "./blocks/social.scss";
+@import "./blocks/copyright.scss";
+@import "./blocks/gallery-container.scss";
+@import "./blocks/gallery-section.scss";
+@import "./blocks/gallery.scss";
+@import "./blocks/card-label.scss";
+@import "./blocks/content-card.scss";
+@import "./blocks/video-presentation.scss";

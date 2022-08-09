@@ -1,0 +1,35 @@
+.social__list {
+  @extend%normalize;
+  display: grid;
+  grid-template-columns: repeat(3, 48px);
+  column-gap: 6px;
+}
+
+.social__item {
+  background-color: $secondary-background-color;
+  width: 48px;
+  height: 48px;
+  list-style-type: none;
+}
+
+.social__link {
+  display: block;
+  box-sizing: border-box;
+  text-decoration: none;
+
+  &--vkontakte {
+    padding: 16px 12px 12px 12px;
+  }
+
+  &--telegram {
+    padding: 15px 13px;
+  }
+
+  &--youtube {
+    padding: 17px 14px;
+  }
+}
+
+.social__item-image {
+  fill: $secondary-color;
+}

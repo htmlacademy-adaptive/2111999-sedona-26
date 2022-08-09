@@ -1,0 +1,24 @@
+.header {
+  @extend%normalize;
+  display: flex;
+  position: relative;
+}
+
+.header__main-logo {
+  cursor: $cursor;
+  z-index: 1;
+}
+
+.header__main-logo-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.header__navigation {
+  width: 100%;
+  position: relative;
+  @extend%zero-centered;
+}

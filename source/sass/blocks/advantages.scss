@@ -1,0 +1,44 @@
+.advantages {
+  @extend%zero-centered;
+  padding-top: 32px;
+}
+
+.advantages__title {
+  color: $title-color;
+  @extend%normalize;
+  text-align: center;
+  margin-right: 20px;
+  margin-left: 18px;
+  margin-bottom: 35px;
+}
+
+.advantages__subtitle {
+  margin-right: 20px;
+  margin-bottom: 16px;
+  margin-left: 16px;
+  text-align: center;
+}
+
+.advantages__wrapper {
+  @extend%zero-centered;
+}
+
+.advantages__list {
+  @extend%normalize;
+}
+
+.advantages__preamble {
+  position: relative;
+}
+
+.advantages__preamble::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/divider-advantage.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 37px;
+  bottom: -37px;
+  left: 0;
+}

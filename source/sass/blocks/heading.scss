@@ -1,0 +1,15 @@
+.heading {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $title-color;
+
+  &--secondary-color {
+    color: $secondary-color;
+  }
+
+  &--non-standard {
+    font-size: 21px;
+  }
+}

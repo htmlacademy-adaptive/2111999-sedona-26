@@ -1,0 +1,19 @@
+.page-footer {
+  padding-top: 29px;
+  padding-right: 80px;
+  padding-bottom: 23px;
+  padding-left: 84px;
+}
+
+.page-footer__wrapper {
+  @extend%zero-centered;
+  text-align: center;
+}
+
+.page-footer__hashtag {
+  margin-bottom: 34px;
+}
+
+.page-footer__social {
+  margin-bottom: 40px;
+}

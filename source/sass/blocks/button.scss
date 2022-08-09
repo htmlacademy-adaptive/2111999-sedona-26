@@ -1,0 +1,13 @@
+.button {
+  font-size: 21px;
+  font-weight: 700;
+  line-height: 26px;
+  text-transform: uppercase;
+  display: block;
+  text-decoration: none;
+  text-align: center;
+  color: $secondary-color;
+  background-color: $secondary-background-color;
+  @extend%normalize;
+  cursor: $cursor;
+}
