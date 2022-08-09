@@ -3,10 +3,14 @@
 }
 
 .additional-item__title {
-  @extend%normalize;
+  margin: 0;
+  padding: 0;
+  border: 0;
   margin-bottom: 16px;
 }
 
 .additional-item__description {
-  @extend%normalize;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }

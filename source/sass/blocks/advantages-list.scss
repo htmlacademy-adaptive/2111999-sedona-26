@@ -1,11 +1,10 @@
-.advantages-list {
-
-}
 
 .advantages-list__item {
   text-align: center;
 }
 
 .advantages-list__sublist {
-  @extend%normalize;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }

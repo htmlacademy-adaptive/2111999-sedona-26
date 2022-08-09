@@ -4,7 +4,9 @@
 
 .navigation__toggle {
   background-color: transparent;
-  @extend%normalize;
+  margin: 0;
+  padding: 0;
+  border: 0;
   cursor: $cursor;
   width: 23px;
   height: 22px;
@@ -13,7 +15,9 @@
 }
 
 .navigation__list {
-  @extend%normalize;
+  margin: 0;
+  padding: 0;
+  border: 0;
   position: absolute;
   @extend%zero-centered;
   z-index: 3;

@@ -1,6 +1,5 @@
 .additional-list {
   padding: 23px 18px 52px 18px;
-
 }
 
 .additional__item {
@@ -9,19 +8,16 @@
   &--housing {
     background-image: url("../images/icons/icon-house.svg");
     background-repeat: no-repeat;
-
   }
 
   &--food {
     background-image: url("../images/icons/icon-food.svg");
     background-repeat: no-repeat;
-
   }
 
   &--gifts {
     background-image: url("../images/icons/icon-gifts.svg");
     background-repeat: no-repeat;
-
   }
 
   &:not(:last-child) {
@@ -33,7 +29,3 @@
   text-align: left;
   padding-top: 8px;
 }
-
-
-
-

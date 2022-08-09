@@ -14,7 +14,9 @@
 }
 
 .advantage-card__title {
-  @extend%normalize;
+  margin: 0;
+  padding: 0;
+  border: 0;
   margin-bottom: 11px;
 }
 
@@ -24,5 +26,7 @@
 }
 
 .advantage-card__description {
-  @extend%normalize;;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }

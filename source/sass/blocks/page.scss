@@ -11,6 +11,8 @@
   color: $primary-color;
   background-color: $primary-background-color;
   max-width: 320px;
-  @extend%normalize;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 

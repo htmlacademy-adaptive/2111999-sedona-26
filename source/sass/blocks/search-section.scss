@@ -7,17 +7,25 @@
 }
 
 .search-section__wrapper {
-  @extend%zero-centered;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   text-align: center;
 }
 
 .search-section__title {
-  @extend%normalize;
+  margin: 0;
+  padding: 0;
+  border: 0;
   margin-bottom: 25px;
 }
 
 .search-section__description {
-  @extend%normalize;
+  margin: 0;
+  padding: 0;
+  border: 0;
   margin-bottom: 33px;
 }
 

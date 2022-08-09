@@ -1,5 +1,7 @@
 .header {
-  @extend%normalize;
+  margin: 0;
+  padding: 0;
+  border: 0;
   display: flex;
   position: relative;
 }
@@ -20,5 +22,9 @@
 .header__navigation {
   width: 100%;
   position: relative;
-  @extend%zero-centered;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }

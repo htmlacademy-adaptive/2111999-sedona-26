@@ -1,11 +1,17 @@
 .advantages {
-  @extend%zero-centered;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
   padding-top: 32px;
 }
 
 .advantages__title {
   color: $title-color;
-  @extend%normalize;
+  margin: 0;
+  padding: 0;
+  border: 0;
   text-align: center;
   margin-right: 20px;
   margin-left: 18px;
@@ -20,11 +26,17 @@
 }
 
 .advantages__wrapper {
-  @extend%zero-centered;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .advantages__list {
-  @extend%normalize;
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
 .advantages__preamble {
