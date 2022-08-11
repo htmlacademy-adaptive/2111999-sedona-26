@@ -4,10 +4,6 @@
 
 .navigation__toggle {
   background-color: transparent;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  cursor: $cursor;
   width: 23px;
   height: 22px;
   background-image: url("../images/icons/icon-menu-burger.svg");
@@ -15,20 +11,21 @@
 }
 
 .navigation__list {
-  margin: 0;
-  padding: 0;
-  border: 0;
+  padding-left: 0;
+  width: 100%;
   position: absolute;
-  @extend%zero-centered;
   z-index: 3;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  list-style-type: none;
 }
 
 .navigation__item {
-  list-style-type: none;
-  background-color: $secondary-background-color;
-  mix-blend-mode: normal;
+
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-  max-width: 320px;
 
   &:first-child {
     box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2);
@@ -40,27 +37,5 @@
 }
 
 .navigation__link {
-  font-size: 18px;
-  line-height: 26px;
-  font-weight: 700;
-  text-decoration: none;
-  display: block;
-  color: $secondary-color;
-  cursor: $cursor;
-
-  &--about {
-    padding: 17px 109px 12px 108px;
-  }
-
-  &--gallary {
-    padding: 17px 83px 12px 81px;
-  }
-
-  &--feedback {
-    padding: 17px 78px 12px 77px;
-  }
-
-  &--HTML-academy {
-    padding: 17px 81px 12px 81px;
-  }
+  padding: 17px 78px 12px 77px;
 }

@@ -1,13 +1,9 @@
 .header {
-  margin: 0;
-  padding: 0;
-  border: 0;
   display: flex;
   position: relative;
 }
 
 .header__main-logo {
-  cursor: $cursor;
   z-index: 1;
 }
 

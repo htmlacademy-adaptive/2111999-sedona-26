@@ -1,15 +1,30 @@
 .button {
-  font-size: 21px;
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+  font-family: inherit;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+
+.button--block {
+  background-color: $background-secondary;
   font-weight: 700;
+  font-size: 21px;
   line-height: 26px;
   text-transform: uppercase;
-  display: block;
-  text-decoration: none;
-  text-align: center;
-  color: $secondary-color;
-  background-color: $secondary-background-color;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  cursor: $cursor;
+  color: $text-secondary;
+}
+
+.button--link {
+  background-color: $background-secondary;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $text-secondary;
+}
+
+.button--block-size-s {
+  font-size: 18px;
 }

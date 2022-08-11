@@ -2,14 +2,18 @@
   max-width: 320px;
 
   &--key {
-    background-color: $secondary-background-color;
-    color: $secondary-color;
-    padding: 54px 22px 40px 16px;
+    background-color: $background-secondary;
+    color: $text-secondary;
+    padding: 39px 16px 35px 15px;
+  }
+
+  &--start {
+    padding-top: 54px;
   }
 
   &--base {
-    background-color: $additional-background-color;
-    padding: 24px;
+    background-color: $background-additional;
+    padding: 24px 16px 24px 16px;
   }
 }
 

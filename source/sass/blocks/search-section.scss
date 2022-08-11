@@ -1,17 +1,5 @@
 .search-section {
-  max-width: 320px;
-  padding-top: 38px;
-  padding-bottom: 49px;
-  padding-right: 19px;
-  padding-left: 17px;
-}
-
-.search-section__wrapper {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  margin: auto;
+  padding: 38px 19px 49px 17px;
   text-align: center;
 }
 
@@ -23,12 +11,9 @@
 }
 
 .search-section__description {
-  margin: 0;
-  padding: 0;
-  border: 0;
   margin-bottom: 33px;
 }
 
 .search-section__button {
-  padding: 16px 49px;
+  padding: 16px 45px;
 }

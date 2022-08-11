@@ -1,6 +1,6 @@
 .hero {
-  color: $secondary-color;
-  background-color: $secondary-background-color;
+  color: $text-additional;
+  background-color: $background-img;
   background-image: url("../images/hero-background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -27,8 +27,8 @@
 }
 
 .hero--modified {
-  color: $secondary-color;
-  background-color: $secondary-background-color;
+  color: $text-additional;
+  background-color: $background-img;
   background-image: url("../images/hero-background-catalog.jpg");
   background-repeat: no-repeat;
   background-size: cover;

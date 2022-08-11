@@ -24,7 +24,7 @@ const styles = () => {
       autoprefixer(),
       csso()
     ]))
-    .pipe(rename("style.css"))
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
@@ -44,7 +44,7 @@ const html = () => {
 const scripts = () => {
   return gulp.src("source/js/script.js")
     .pipe(terser())
-    .pipe(rename("script.js"))
+    .pipe(rename("script.min.js"))
     .pipe(gulp.dest("build/js"))
     .pipe(sync.stream());
 }
@@ -147,6 +147,7 @@ const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series(styles));
   gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
+  gulp.watch("source/images/*.*",gulp.series(copyImages));
 }
 
 // Build
