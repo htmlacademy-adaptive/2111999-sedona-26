@@ -1,4 +1,14 @@
 .advantages-item__photo {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 100%;
+  }
 }
 
+
+.advantages-item__wrapper-group {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}

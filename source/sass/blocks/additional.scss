@@ -1,6 +1,10 @@
 .additional {
   padding: 23px 18px 52px 18px;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
 }
 
 .additional__item {

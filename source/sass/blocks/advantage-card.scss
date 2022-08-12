@@ -15,6 +15,10 @@
     background-color: $background-additional;
     padding: 24px 16px 24px 16px;
   }
+
+  @media (min-width: $tablet-width) {
+    width: 256px;
+  }
 }
 
 .advantage-card__title {

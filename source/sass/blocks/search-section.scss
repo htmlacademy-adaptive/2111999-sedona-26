@@ -1,6 +1,10 @@
 .search-section {
   padding: 38px 19px 49px 17px;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 61px 155px 58px 155px;
+  }
 }
 
 .search-section__title {
@@ -15,5 +19,11 @@
 }
 
 .search-section__button {
+  width: 284px;
   padding: 16px 45px;
+  margin: 0 auto;
+
+  @media (min-width: $tablet-width) {
+    width: 458px;
+  }
 }
