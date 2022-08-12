@@ -1,0 +1,36 @@
+.advantage-card {
+  max-width: 320px;
+
+  &--key {
+    background-color: $background-secondary;
+    color: $text-secondary;
+    padding: 39px 16px 35px 15px;
+  }
+
+  &--start {
+    padding-top: 54px;
+  }
+
+  &--base {
+    background-color: $background-additional;
+    padding: 24px 16px 24px 16px;
+  }
+}
+
+.advantage-card__title {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  margin-bottom: 11px;
+}
+
+.advantage-card__number {
+  display: block;
+  margin-bottom: 17px;
+}
+
+.advantage-card__description {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}

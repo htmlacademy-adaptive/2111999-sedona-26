@@ -1,0 +1,26 @@
+.social__list {
+  margin: 0;
+  padding-left: 0;
+  width: 156px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.social__item {
+  background-color: $background-secondary;
+  list-style-type: none;
+}
+
+.social__link {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.social__item-image {
+  fill: $background-base;
+}

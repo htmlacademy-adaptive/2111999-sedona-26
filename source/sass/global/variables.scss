@@ -1,0 +1,46 @@
+//Цветовая палитра
+
+// Основные базовые цвета
+
+$base: #81b3d2;
+$base-secondary: #ffffff;
+$base-support: #000000;
+
+// Палитра для текста
+
+$text-base: $base-support;
+$text-base-hover: $base;
+$text-base-active: #b3b3b3;
+$text-base-disabled: rgba($text-base, 0.3);
+$text-base-current: #766357;
+
+$text-secondary: $base-secondary;
+$text-secondary-hover: rgba($text-secondary, 0.6);
+$text-secondary-active: rgba($text-secondary, 0.3);
+
+$text-additional: #333333;
+
+$text-placeholder: rgba($text-base, 0.3);
+
+// Палитра для фона
+
+$background-base: $base-secondary;
+$background-support: #e7e5e5;
+$background-secondary: $base;
+$background-additional: #eeeeee;
+$background-img: #f2f2f2;
+
+// Палитра для кнопок
+
+$button-base: $base;
+$button-base-hover: #669ec0;
+$button-base-active: #5496bd;
+$button-base-disabled: #e5e5e5;
+
+// Палитра для форм
+
+$input-base: #f2f2f2;
+$input-base-hover:  #e5e5e5;
+$input-base-active: #d5d5d5;
+$input-placeholder: rgba($base-support, 0.3);
+$legend: rgba(51, 51, 51, 0.6);

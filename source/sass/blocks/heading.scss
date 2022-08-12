@@ -1,0 +1,24 @@
+.heading {
+  color: $text-base;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+
+  &--secondary-color {
+    color: $text-secondary;
+  }
+
+  &--large-size {
+    font-size: 21px;
+  }
+
+  &--small-size {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  &--position-left {
+    text-align: left;
+  }
+}

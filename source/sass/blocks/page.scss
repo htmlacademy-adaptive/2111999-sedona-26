@@ -1,0 +1,14 @@
+.page {
+  height: 100%;
+}
+
+.page__body {
+  font-family: "PT Sans", "Arial", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: $text-additional;
+  background-color: $background-base;
+}

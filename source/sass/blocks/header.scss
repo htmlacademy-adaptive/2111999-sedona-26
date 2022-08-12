@@ -1,0 +1,26 @@
+.header {
+  display: flex;
+  position: relative;
+}
+
+.header__main-logo {
+  z-index: 1;
+}
+
+.header__main-logo-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.header__navigation {
+  width: 100%;
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}

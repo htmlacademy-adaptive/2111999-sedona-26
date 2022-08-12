@@ -1,0 +1,30 @@
+.button {
+  margin: 0;
+  border: 0;
+  text-decoration: none;
+  font-family: inherit;
+  cursor: pointer;
+  display: block;
+  text-align: center;
+}
+
+.button--block {
+  background-color: $background-secondary;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  text-transform: uppercase;
+  color: $text-secondary;
+}
+
+.button--link {
+  background-color: $background-secondary;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: $text-secondary;
+}
+
+.button--block-size-s {
+  font-size: 18px;
+}
