@@ -1,0 +1,20 @@
+.field__label {
+  margin-left: 16px;
+}
+
+
+.field__field-input {
+  margin: 0;
+  width: 280px;
+  padding: 16px;
+  background-color: $input-base;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.field__field-input:-moz-placeholder {
+  color: $input-placeholder;
+}

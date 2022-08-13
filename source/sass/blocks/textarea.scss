@@ -1,0 +1,15 @@
+.textarea__textarea-field {
+  border: 0;
+  padding: 16px 16px 16px 16px;
+  width: 279px;
+  min-height: 150px;
+  background-color: $input-base;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+
+  &::-moz-placeholder {
+    color: $input-placeholder;
+  }
+}

@@ -1,0 +1,36 @@
+.field-group {
+  padding-top: 24px;
+
+  &--name {
+    padding-bottom: 39px;
+  }
+
+  &--contacts {
+    padding-bottom: 34px;
+  }
+
+  &--radio {
+    padding-bottom: 24px;
+  }
+
+  &--checkbox {
+    padding-bottom: 24px;
+  }
+
+  &--textarea {
+    padding-bottom: 56px;
+  }
+}
+
+.field-group__title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.field-group__list {
+  padding-left: 0;
+  margin: 0;
+  list-style-type: none;
+  display: grid;
+  gap: 16px;
+}
