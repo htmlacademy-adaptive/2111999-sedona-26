@@ -24,16 +24,16 @@
           <span class="visually-hidden">Открыть меню</span>
         </button>
           <ul class="navigation__list site-navigation">
-            <li class="navigation__item navigation__item--first-item-left">
-              <a class="navigation__link button button--link navigation__link--current">Главная</a>
+            <li class="navigation__item">
+              <a class="navigation__link button button--link" href="index.html">Главная</a>
             </li>
-            <li class="navigation__item navigation__item--second-item-left">
+            <li class="navigation__item">
               <a class="navigation__link button button--link" href="catalog.html">Фото и видео</a>
             </li>
-            <li class="navigation__item navigation__item--first-item-right">
-              <a class="navigation__link button button--link" href="form.html">Форма отзыва</a>
+            <li class="navigation__item">
+              <a class="navigation__link button button--link navigation__link--current" href="form.html">Форма отзыва</a>
             </li>
-            <li class="navigation__item navigation__item--second-item-right">
+            <li class="navigation__item">
               <a class="navigation__link button button--link navigation__link--summary" href="https://htmlacademy.ru">Html academy</a>
             </li>
           </ul>
@@ -41,7 +41,7 @@
     </header>
 
 
-  <main class="form-section-container">
+  <main class="form-section-container main-container">
     <h1 class="visually-hidden">Форма отзыва о посещенных достопримечательностях</h1>
 
     <div class="form-section-container__hero hero hero--modified">
@@ -60,26 +60,26 @@
         <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
           <div class="form__field-group-wrapper">
 
-            <div class="form__group form__group--name field-group">
+            <div class="form__group field-group field-group--name">
               <h2 class="field-group__title heading">Представьтесь:</h2>
 
               <ul class="field-group__list field-group">
                 <li class="field-group__item">
-                  <div class="field">
+                  <div class="field field--name">
                   <label class="field__label" for="name">Имя*: </label>
                   <input class="field__field-input input" type="text" id="name" name="name" value="Пётр" required>
                 </div>
                 </li>
 
                 <li class="field-group__item">
-                  <div class="field">
+                  <div class="field field--name">
                   <label class="field__label" for="surname">Фамилия*:</label>
                   <input class="field__field-input input" type="text" id="surname" name="surname" value="Пустота" required>
                 </div>
                 </li>
 
                 <li class="field-group__item">
-                  <div class="field">
+                  <div class="field field--name">
                   <label class="field__label" for="patronymic">Отчество:</label>
                   <input class="field__field-input input" type="text" id="patronymic" name="patronymic" value="Викторович">
                 </div>
@@ -87,19 +87,19 @@
               </ul>
             </div>
 
-            <div class="form__group form__group--contacts field-group">
-              <h2 class="field-group heading">Контактная информация:</h2>
+            <div class="form__group field-group field-group--contacts">
+              <h2 class="field-group__title heading">Контактная информация:</h2>
 
               <ul class="field-group__list">
-                <li class="field-group__item">
-                  <div class="field">
+                <li class="field-group__item field-group__item--content-right">
+                  <div class="field field--contacts">
                   <label class="field__label" for="telephone">Контактный телефон*:</label>
                   <input class="field__field-input input" type="tel" id="telephone" name="telephone" required placeholder="Введите телефон">
                 </div>
                 </li>
 
-                <li class="field-group__item">
-                  <div class="field">
+                <li class="field-group__item field-group__item--content-right">
+                  <div class="field field--contacts">
                   <label class="field__label" for="email">Электронная почта*:</label>
                   <input class="field__field-input input" type="email" id="email" name="email" required placeholder="Введите e-mail">
                 </div>
@@ -108,10 +108,10 @@
             </div>
           </div>
 
-          <div class="form__group field-group">
+          <div class="form__group field-group field-group--radio">
             <p class="field-group__title heading">Ваше общее впечатление:</p>
 
-            <ul class="field-group__list">
+            <ul class="field-group__list field-group__list--radio">
               <li class="field-group__item">
                 <label class="selection">
                 <input class="selection__control-input visually-hidden" type="radio"name="feeling" value="positive" checked>
@@ -138,12 +138,12 @@
             </ul>
           </div>
 
-          <div class="form__group field-group">
+          <div class="form__group field-group field-group--checkbox">
             <p class="field-group__title heading">Посещенные достопримечательности:</p>
 
-            <ul class="field-group__list">
+            <ul class="field-group__list field-group__list--checkbox">
               <li class="field-group__item">
-                <label class="selection">
+                <label class="selection__control selection">
                   <input class="selection__control-input visually-hidden" type="checkbox" name="Devils-bridge" checked>
                   <span class="selection__control-mark input selection__control-mark--checkbox"></span>
                   <span class="selection__control-label">Мост Дьявола</span>
@@ -176,7 +176,7 @@
             </ul>
           </div>
 
-          <div class="form__group form__group--textarea field-group">
+          <div class="form__group field-group field-group--textarea">
             <p class="field-group__title heading">Опишите свои эмоции:</p>
             <p class="field-group__textarea textarea">
               <textarea class="textarea__textarea-field" name="comment"
@@ -243,9 +243,10 @@
       </section>
     </div>
   </footer>
+  </div>
 
-  <div class="modal-conteiner">
-    <div class="modal-conteiner__modal modal-failure modal-failure--active">
+  <div class="modal-conteiner modal-conteiner--close">
+    <div class="modal modal-failure">
       <section class="modal-failure__content">
         <h2 class="modal-failure__title heading">Что-то пошло не так!</h2>
         <p class="modal-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
@@ -255,8 +256,8 @@
     </div>
   </div>
 
-  <div class="modal-conteiner">
-    <div class="modal-conteiner__modal modal-success modal-success--active">
+  <div class="modal-conteiner modal-conteiner--close">
+    <div class="modal modal-success">
       <section class="modal-success__content">
         <h2 class="modal-success__title heading">Ваш отзыв отправлен!</h2>
         <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
@@ -265,6 +266,5 @@
       </section>
     </div>
   </div>
-</div>
 </body>
 </html>

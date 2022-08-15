@@ -2,6 +2,10 @@
   @media (min-width: $tablet-width) {
     width: 768px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }
 
 .advantages__title {
@@ -22,9 +26,17 @@
   text-align: center;
   position: relative;
   padding: 32px 17px 16px 14px;
+}
 
-  @media (min-width: $tablet-width) {
+@media (min-width: $tablet-width) {
+  .advantages__preamble {
     padding: 47px 124px 55px 124px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages__preamble {
+    padding: 59px 359px 44px 357px;
   }
 }
 
@@ -38,4 +50,10 @@
   height: 37px;
   bottom: -37px;
   left: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages__preamble::before {
+    display: none;
+  }
 }

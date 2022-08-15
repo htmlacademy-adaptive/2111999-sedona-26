@@ -5,6 +5,12 @@
   @media (min-width: $tablet-width) {
     padding: 61px 155px 58px 155px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 371px;
+    padding-bottom: 66px;
+    padding-left: 371px;
+  }
 }
 
 .search-section__title {

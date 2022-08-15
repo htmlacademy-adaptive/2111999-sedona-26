@@ -1,7 +1,21 @@
 .video-presentation__wrapper {
   padding-top: 17px;
-  padding-right: 20px;
   padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-presentation__wrapper {
+    padding: 58px 60px 40px 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-presentation__wrapper {
+    padding-top: 62px;
+    padding-left: 199px;
+    padding-right: 201px;
+  }
 }
 
 .video-presentation__preamble {
@@ -20,4 +34,15 @@
 
 .video-presentation__video-content {
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .video-presentation__video-content {
+    width: 100%;
+    min-height: 500px;
+  }
+}
+
+.video-presentation__button {
+  cursor: pointer;
 }

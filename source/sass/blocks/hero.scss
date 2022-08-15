@@ -20,10 +20,17 @@
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
 
-  @media (min-width: $tablet-width) {
-    height: 518px;
+@media (min-width: $tablet-width) {
+  .hero {
     padding: 77px 154px 91px 153px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    padding: 78px 370px 90px 370px;
   }
 }
 
@@ -46,6 +53,18 @@
   text-align: center;
   padding: 52px 46px 67px 45px;
   position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .hero--modified {
+    padding: 95px 155px 117px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero--modified {
+    padding: 101px 371px 120px 369px;
+  }
 }
 
 .hero__slogan--abbreviated {

@@ -4,10 +4,38 @@
   padding-left: 20px;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback__wrapper {
+    padding-right: 60px;
+    padding-left: 60px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__wrapper {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
+}
+
 .feedback__preamble {
   padding-top: 36px;
   padding-bottom: 28px;
   text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback__preamble {
+    padding-top: 64px;
+    padding-bottom: 102px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__preamble {
+    padding-top: 115px;
+    padding-bottom: 67px;
+  }
 }
 
 .feedback__title {

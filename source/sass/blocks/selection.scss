@@ -1,9 +1,7 @@
-.selection__control-input {
+.selection {
   position: relative;
   display: block;
-  padding-left: 60px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding: 10px 0 10px 62px;
 }
 
 .selection__control-mark {
@@ -12,6 +10,7 @@
   height: 46px;
   top: 0;
   left: 0;
+  background-color: $input-base;
 
   &--radio {
     border-radius: 50%;
@@ -28,6 +27,5 @@
   font-weight: 700;
   text-transform: none;
   color: $text-base;
-  margin-left: 16px;
 }
 

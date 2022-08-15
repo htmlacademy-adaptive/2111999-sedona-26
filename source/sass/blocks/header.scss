@@ -7,6 +7,12 @@
   z-index: 1;
 }
 
+@media (min-width: $tablet-width) {
+  .header__main-logo {
+    z-index: 3;
+  }
+}
+
 .header__main-logo-image {
   position: absolute;
   top: 0;

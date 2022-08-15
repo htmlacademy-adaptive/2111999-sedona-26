@@ -23,23 +23,23 @@
         <span class="visually-hidden">Открыть меню</span>
       </button>
         <ul class="navigation__list site-navigation">
-          <li class="navigation__item navigation__item--first-item-left">
-            <a class="navigation__link button button--link navigation__link--current">Главная</a>
+          <li class="navigation__item">
+            <a class="navigation__link button button--link" href="index.html">Главная</a>
           </li>
-          <li class="navigation__item navigation__item--second-item-left">
-            <a class="navigation__link button button--link" href="catalog.html">Фото и видео</a>
+          <li class="navigation__item">
+            <a class="navigation__link button button--link navigation__link--current" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="navigation__item navigation__item--first-item-right">
+          <li class="navigation__item">
             <a class="navigation__link button button--link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="navigation__item navigation__item--second-item-right">
+          <li class="navigation__item">
             <a class="navigation__link button button--link navigation__link--summary" href="https://htmlacademy.ru">Html academy</a>
           </li>
         </ul>
     </nav>
   </header>
 
-  <main class="gallery-container">
+  <main class="gallery-container main-container">
     <h1 class="visually-hidden">Галлерея</h1>
 
     <div class="gallery-container__hero hero hero--modified">
@@ -57,19 +57,23 @@
 
         <ul class="gallery__list gallery">
 
-          <li class="gallery__item">
+          <li class="gallery__item gallery__item--primary">
             <figure class="gallery__content photo-card">
               <a class="photo-card__link" href="#">
-                <img class="photo-card__image" src="images/catalog-foto-galary/space.jpg" width="280" height="280"
+                <img class="photo-card__image photo-card__image--primary" src="images/catalog-foto-galary/space.jpg" width="280" height="280"
                   alt="Изображение дороги на фоне заката и гор">
               </a>
               <figcaption class="photo-card__label">
+                <div class="photo-card__label-wrapper">
                 <p class="photo-card__name heading heading--small-size heading--position-left">Неродные просторы</p>
                 <p class="photo-card__copyright">Автор фото: Борис</p>
+              </div>
+              <div class="photo-card__like-wrapper">
                 <button class="photo-card__button button-like" type="button">
                   <span class="visually-hidden">Нравится</span>
                 </button>
                 <span class="photo-card__mark-like">1350</span>
+              </div>
               </figcaption>
             </figure>
           </li>
@@ -81,12 +85,16 @@
                   alt="Местный цветущий кактус на фоне гор">
               </a>
               <figcaption class="photo-card__label">
+                <div class="photo-card__label-wrapper">
                 <p class="photo-card__name heading heading--small-size heading--position-left">Местная растительность</p>
                 <p class="photo-card__copyright">Автор фото: Сергей</p>
+              </div>
+              <div class="photo-card__like-wrapper">
                 <button class="photo-card__button button-like" type="button">
                   <span class="visually-hidden">Нравится</span>
                 </button>
                 <span class="photo-card__mark-like">143</span>
+              </div>
               </figcaption>
             </figure>
           </li>
@@ -98,12 +106,16 @@
                   height="280" alt="Серпантин в окружении леса">
               </a>
               <figcaption class="photo-card__label">
+                <div class="photo-card__label-wrapper">
                 <p class="photo-card__name heading heading--small-size heading--position-left">Дорога на север</p>
                 <p class="photo-card__copyright">Автор фото: Петр </p>
+              </div>
+              <div class="photo-card__like-wrapper">
                 <button class="photo-card__button button-like" type="button">
                   <span class="visually-hidden">Нравится</span>
                 </button>
                 <span class="photo-card__mark-like">96</span>
+              </div>
               </figcaption>
             </figure>
           </li>
@@ -114,13 +126,17 @@
                 <img class="photo-card__image" src="images/catalog-foto-galary/devils-bridge.jpg" width="280"
                   height="280" alt="Завораживающий вид на мост Дьявола">
               </a>
-              <figcaption class="photo-card__label card-label">
+              <figcaption class="photo-card__label">
+                <div class="photo-card__label-wrapper">
                 <p class="photo-card__name heading heading--small-size heading--position-left">Мост дьявола</p>
                 <p class="photo-card__copyright">Автор фото: Антон</p>
+              </div>
+              <div class="photo-card__like-wrapper">
                 <button class="photo-card__button button-like" type="button">
                   <span class="visually-hidden">Нравится</span>
                 </button>
                 <span class="photo-card__mark-like">254</span>
+              </div>
               </figcaption>
             </figure>
           </li>

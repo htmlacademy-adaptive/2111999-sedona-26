@@ -1,3 +1,7 @@
+.textarea {
+  margin: 0;
+}
+
 .textarea__textarea-field {
   border: 0;
   padding: 16px 16px 16px 16px;
@@ -11,5 +15,21 @@
 
   &::-moz-placeholder {
     color: $input-placeholder;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .textarea__textarea-field {
+    width: 648px;
+    min-height: 160px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .textarea__textarea-field {
+    width: 768px;
+    min-height: 160px;
+    display: block;
+    margin: 0 auto;
   }
 }
