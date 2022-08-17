@@ -1,0 +1,31 @@
+.selection {
+  position: relative;
+  display: block;
+  padding: 10px 0 10px 62px;
+}
+
+.selection__control-mark {
+  position: absolute;
+  width: 46px;
+  height: 46px;
+  top: 0;
+  left: 0;
+  background-color: $input-base;
+
+  &--radio {
+    border-radius: 50%;
+  }
+
+  &--checkbox {
+    border-radius: 4px;
+  }
+}
+
+.selection__control-label {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  text-transform: none;
+  color: $text-base;
+}
+

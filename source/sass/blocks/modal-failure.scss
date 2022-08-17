@@ -1,5 +1,22 @@
 .modal-failure {
+  width: 320px;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-failure {
+    width: 400px;
+  }
+}
+
+.modal-failure__content {
   padding: 45px 42px 35px 41px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-failure__content {
+    padding: 50px 47px 49px 46px;
+  }
 }
 
 .modal-failure__title {
@@ -12,6 +29,15 @@
   margin-bottom: 27px;
 }
 
-.modal-failure__button {
+.modal-failure .modal-failure__button {
+  width: 180px;
   padding: 18px 64px 14px 63px;
+  margin: 0 auto;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-failure .modal-failure__button {
+    width: 272px;
+    padding: 18px 108px 14px 107px;
+  }
 }

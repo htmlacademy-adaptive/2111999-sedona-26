@@ -1,5 +1,5 @@
 .advantage-card {
-  max-width: 320px;
+  width: 320px;
 
   &--key {
     background-color: $background-secondary;
@@ -17,11 +17,54 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .advantage-card {
+    width: 256px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-card {
+    width: 400px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-card--key {
+    padding: 40px 32px 43px 32px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-card--key {
+    padding: 47px 52px 56px 53px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-card--base {
+    min-height: 256px;
+    padding: 42px 34px 41px 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-card--base {
+    padding: 43px 54px 62px 54px;
+  }
+}
+
 .advantage-card__title {
   margin: 0;
   padding: 0;
   border: 0;
   margin-bottom: 11px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-card__title {
+    font-size: 21px;
+  }
 }
 
 .advantage-card__number {

@@ -1,8 +1,19 @@
 .page-container {
-  max-width: 320px;
+  width: 320px;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
   margin: auto;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+
+  @media (min-width: $tablet-width) {
+    width: 768px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1200px;
+  }
 }

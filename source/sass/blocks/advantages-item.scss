@@ -1,4 +1,32 @@
+.advantages-item__card--order-second {
+  @media (min-width: $tablet-width) {
+    order: 2;
+  }
+}
+
+
 .advantages-item__photo {
   display: block;
 }
 
+@media (min-width: $tablet-width) {
+  .advantages-item__photo {
+    width: 512px;
+  }
+
+  &--order-first {
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-item__photo {
+    width: 800px;
+  }
+}
+
+.advantages-item__wrapper-group {
+  @media (min-width: $tablet-width) {
+    display: flex;
+  }
+}

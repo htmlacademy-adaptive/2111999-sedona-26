@@ -1,6 +1,59 @@
+.photo-card__image {
+  display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .photo-card__image {
+    width: 100%;
+    min-height: 267px;
+  }
+
+  .photo-card__image--primary {
+    width: 100%;
+    min-height: 400px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-card__image {
+    width: 100%;
+  }
+
+  .photo-card__image--primary {
+    width: 100%;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo-card__label {
+    background-color: $background-label;
+    display: flex;
+    align-items: center;
+    padding: 22px 20px 15px 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo-card__label {
+    background-color: rgba($base-support, 0.3);
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo-card__like-wrapper {
+    margin-left: auto;
+  }
+}
+
 .photo-card__name {
   margin-top: 0;
   margin-bottom: 2px;
+}
+
+@media (min-width: $desktop-width) {
+  .photo-card__name {
+    color: $text-secondary;
+  }
 }
 
 .photo-card__copyright {
@@ -9,7 +62,23 @@
   text-transform: none;
 }
 
+@media (min-width: $desktop-width) {
+  .photo-card__copyright {
+    color: $text-secondary;
+  }
+}
+
+.photo-card__button {
+  cursor: pointer;
+}
+
 .photo-card__mark-like {
   font-weight: 700;
   color: $text-base;
+}
+
+@media (min-width: $desktop-width) {
+  .photo-card__mark-like {
+    color: $text-secondary;
+  }
 }

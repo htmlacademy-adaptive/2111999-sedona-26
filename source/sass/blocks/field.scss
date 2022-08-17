@@ -1,0 +1,40 @@
+.field {
+  width: 280px;
+}
+
+@media (min-width: $desktop-width) {
+  .field--name {
+    width: 402px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field--contacts {
+    width: 402px;
+  }
+}
+
+.field__label {
+  margin-left: 16px;
+}
+
+.field__field-input {
+  margin: 0;
+  width: 100%;
+  padding: 16px;
+  border: none;
+  font-family: inherit;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+@media (min-width: $desktop-width) {
+  .field__field-input {
+    width: 100%;
+  }
+}
+
+.field__field-input:-moz-placeholder {
+  color: $input-placeholder;
+}

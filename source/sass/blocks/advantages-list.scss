@@ -1,4 +1,9 @@
 .advantages-list {
   list-style-type: none;
   text-align: center;
+
+  @media (min-width: $tablet-width) {
+    display: flex;
+    flex-wrap: wrap;
+  }
 }

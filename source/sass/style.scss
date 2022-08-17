@@ -4,8 +4,10 @@
 @import "./global/visually-hidden.scss";
 @import "./blocks/page.scss";
 @import "./blocks/page-container.scss";
+@import "./blocks/main-container.scss";
 @import "./blocks/header.scss";
 @import "./blocks/navigation.scss";
+@import "./blocks/button.scss";
 @import "./blocks/heading.scss";
 @import "./blocks/hero.scss";
 @import "./blocks/advantages.scss";
@@ -15,7 +17,6 @@
 @import "./blocks/additional";
 @import "./blocks/additional-item";
 @import "./blocks/search-section";
-@import "./blocks/button.scss";
 @import "./blocks/map-tablet.scss";
 @import "./blocks/page-footer.scss";
 @import "./blocks/hashtag.scss";
@@ -25,9 +26,16 @@
 @import "./blocks/gallery.scss";
 @import "./blocks/photo-card.scss";
 @import "./blocks/video-presentation.scss";
+@import "./blocks/video.scss";
 @import "./blocks/feedback.scss";
-@import "./blocks/feedback-form.scss";
+@import "./blocks/form.scss";
+@import "./blocks/field-group.scss";
+@import "./blocks/field.scss";
+@import "./blocks/input.scss";
+@import "./blocks/selection.scss";
+@import "./blocks/textarea.scss";
 @import "./blocks/modal-conteiner.scss";
+@import "./blocks/modal.scss";
 @import "./blocks/modal-failure.scss";
 @import "./blocks/modal-success.scss";
 
