@@ -4,7 +4,6 @@
   }
 }
 
-
 .advantages-item__photo {
   display: block;
 }
@@ -28,5 +27,25 @@
 .advantages-item__wrapper-group {
   @media (min-width: $tablet-width) {
     display: flex;
+  }
+}
+
+.advantages-item--border-bottom {
+  position: relative;
+}
+
+.advantages-item--border-bottom::after {
+  content: "";
+  position: absolute;
+  width: 284px;
+  height: 1px;
+  bottom: 0;
+  left: 18px;
+  background: #d6d6d6;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-item--border-bottom::after {
+    display: none;
   }
 }

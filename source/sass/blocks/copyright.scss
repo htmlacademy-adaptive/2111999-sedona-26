@@ -1,10 +1,27 @@
 .copyright {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 .copyright__title {
   font: inherit;
   margin: 0;
   margin-right: 13px;
+}
+
+.copyright__title:hover {
+  color: $text-additional-hover;
+}
+
+.copyright__title:active {
+  color: $text-icon-active;
+}
+
+.copyright__logo:hover {
+  fill: $text-additional-hover;
+}
+
+.copyright__logo:active {
+  fill: $text-icon-active;
 }

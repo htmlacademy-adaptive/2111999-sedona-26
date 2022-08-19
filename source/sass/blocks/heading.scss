@@ -22,3 +22,15 @@
     text-align: left;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .heading {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .heading--small-size {
+    font-size: 14px;
+  }
+}

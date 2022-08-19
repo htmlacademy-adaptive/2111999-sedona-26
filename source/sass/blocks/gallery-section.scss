@@ -20,13 +20,15 @@
 .gallery-section__preamble {
   text-align: center;
   padding-top: 30px;
-  padding-bottom: 17px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: $tablet-width) {
   .gallery-section__preamble {
-    padding-top: 62px;
+    padding-top: 66px;
     padding-bottom: 67px;
+    padding-right: 95px;
+    padding-left: 95px;
   }
 }
 
@@ -41,6 +43,22 @@
   margin-bottom: 26px;
 }
 
+@media (min-width: $tablet-width) {
+  .gallery-section__title {
+    font-size: 30px;
+  }
+}
+
 .gallery-section__subtitle {
   margin: 0;
+}
+
+.gallery-section__subtitle br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery-section__subtitle br {
+    display: block;
+  }
 }

@@ -4,6 +4,19 @@
   padding: 10px 0 10px 62px;
 }
 
+.selection:hover .selection__control-mark {
+  background-color: $input-base-hover;
+}
+
+.selection:active .selection__control-mark {
+  background-color: $input-base-active;
+}
+
+.selection__control-input:disabled + .selection__control-mark {
+  background-color: #b7b4b4;
+}
+
+
 .selection__control-mark {
   position: absolute;
   width: 46px;
@@ -29,3 +42,23 @@
   color: $text-base;
 }
 
+.selection__control-input[type="checkbox"]:checked + .selection__control-mark::before {
+  content: "";
+  position: absolute;
+  background-image: url("../images/icons/tick.svg");
+  width: 22px;
+  height: 16px;
+  top: 15px;
+  left: 12px;
+}
+
+.selection__control-input[type="radio"]:checked + .selection__control-mark::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background: #333333;
+  border-radius: 50%;
+  top: 15px;
+  left: 15px;
+}

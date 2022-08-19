@@ -25,6 +25,29 @@
   color: $text-secondary;
 }
 
+.button--link:hover {
+  background-color: $button-base-hover;
+}
+
+@media (min-width: $tablet-width) {
+  .button--link:hover {
+    background-color: transparent;
+    color: $text-additional-hover;
+  }
+}
+
+.button--link:active {
+  color: $text-secondary-active;
+  background-color: $button-base-active;
+}
+
+@media (min-width: $tablet-width) {
+  .button--link:active {
+    background-color: transparent;
+    color: $text-additional-active;
+  }
+}
+
 .button--block-size-s {
   font-size: 18px;
 }

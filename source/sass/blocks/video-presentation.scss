@@ -6,7 +6,7 @@
 
 @media (min-width: $tablet-width) {
   .video-presentation__wrapper {
-    padding: 58px 60px 40px 60px;
+    padding: 57px 60px 40px 60px;
   }
 }
 
@@ -23,26 +23,44 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .video-presentation__preamble {
+    padding-right: 101px;
+    padding-left: 102px;
+    margin-bottom: 65px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .video-presentation__preamble {
+    padding-right: 177px;
+    padding-left: 178px;
+    margin-bottom: 68px;
+  }
+}
+
 .video-presentation__title {
   margin: 0;
   margin-bottom: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .video-presentation__title {
+    font-size: 30px;
+  }
 }
 
 .video-presentation__subtitle {
   margin: 0;
 }
 
-.video-presentation__video-content {
-  display: block;
-}
-
 @media (min-width: $tablet-width) {
-  .video-presentation__video-content {
-    width: 100%;
-    min-height: 500px;
+  .video-presentation__subtitle br {
+    display: none;
   }
 }
 
-.video-presentation__button {
-  cursor: pointer;
+
+.video-presentation__video-content {
+  position: relative;
 }

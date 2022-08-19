@@ -17,8 +17,10 @@ $text-base-current: #766357;
 $text-secondary: $base-secondary;
 $text-secondary-hover: rgba($text-secondary, 0.6);
 $text-secondary-active: rgba($text-secondary, 0.3);
-
+$text-additional-active: rgba($base-support, 0.3);
+$text-additional-hover: #81b3d2;
 $text-additional: #333333;
+$text-icon-active: #b3b3b3;
 
 $text-placeholder: rgba($text-base, 0.3);
 
@@ -28,7 +30,7 @@ $background-base: $base-secondary;
 $background-support: #e7e5e5;
 $background-secondary: $base;
 $background-additional: #eeeeee;
-$background-img: #f2f2f2;
+$background-img: $base;
 $background-label: #f2f2f2;
 $background-modal-container: rgba($base-support, 0.3);
 
@@ -39,11 +41,13 @@ $button-base-hover: #669ec0;
 $button-base-active: #5496bd;
 $button-base-disabled: #e5e5e5;
 
+
 // Палитра для форм
 
 $input-base: #f2f2f2;
 $input-base-hover:  #e5e5e5;
 $input-base-active: #d5d5d5;
+$input-secondary-active: $base-secondary;
 $input-placeholder: rgba($base-support, 0.3);
 $legend: rgba(51, 51, 51, 0.6);
 

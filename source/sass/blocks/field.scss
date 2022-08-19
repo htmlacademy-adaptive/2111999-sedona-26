@@ -4,7 +4,7 @@
 
 @media (min-width: $desktop-width) {
   .field--name {
-    width: 402px;
+    width: 430px;
   }
 }
 
@@ -14,6 +14,10 @@
   }
 }
 
+.field--phone {
+  position: relative;
+}
+
 .field__label {
   margin-left: 16px;
 }
@@ -21,12 +25,26 @@
 .field__field-input {
   margin: 0;
   width: 100%;
-  padding: 16px;
-  border: none;
+  padding: 12px;
   font-family: inherit;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  border: 4px solid transparent;
+  outline: none;
+}
+
+.field__field-input:hover {
+  background: $input-base-hover;
+}
+
+.field__field-input:active {
+  background: $input-secondary-active;
+  border: 4px solid $input-base-hover;
+}
+
+.field__field-input:disabled {
+  background: #b7b4b4;
 }
 
 @media (min-width: $desktop-width) {
