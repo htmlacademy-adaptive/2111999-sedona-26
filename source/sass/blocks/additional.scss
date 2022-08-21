@@ -1,102 +1,14 @@
 .additional {
-  padding: 23px 18px 52px 18px;
   list-style-type: none;
   display: grid;
   gap: 22px;
+  padding: 23px 18px 52px 18px;
 }
 
 @media (min-width: $tablet-width) {
   .additional {
-    display: flex;
+    grid-template-columns: repeat(3, 1fr);
     padding: 0;
     gap: 0;
-  }
-}
-
-.additional__item {
-  padding-left: 48px;
-  padding-top: 8px;
-
-  &--housing {
-    background-image: url("../images/icons/icon-house.svg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      background-position: 50% 60px;
-    }
-  }
-
-  &--food {
-    background-image: url("../images/icons/icon-food.svg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      background-position: 50% 63px;
-    }
-  }
-
-  &--gifts {
-    background-image: url("../images/icons/icon-gifts.svg");
-    background-repeat: no-repeat;
-
-    @media (min-width: $tablet-width) {
-      background-position: 50% 57px;
-    }
-  }
-}
-
-
-@media (min-width: $tablet-width) {
-  .additional__item {
-    flex-basis: 33%;
-    flex-grow: 1;
-    flex-shrink: 1;
-    padding: 158px 35px 59px 32px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .additional__item {
-    padding-right: 60px;
-    padding-bottom: 80px;
-    padding-left: 60px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .additional__item .additional__item--housing {
-    padding: 158px 35px 59px 36px;
-  }
-
-  .additional__item .additional__item--food {
-    padding: 158px 38px 59px 38px;
-  }
-
-  .additional__item .additional__item--gifts {
-    padding: 158px 31px 81px 32px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .additional__item .additional__item--housing {
-    padding: 158px 60px 79px 58px;
-  }
-
-  .additional__item .additional__item--food {
-    padding: 158px 43px 80px 44px;
-  }
-
-  .additional__item .additional__item--gifts {
-    padding: 158px 78px 80px 78px;
-  }
-}
-
-.additional__card {
-  text-align: left;
-}
-
-@media (min-width: $tablet-width) {
-  .additional__card {
-    text-align: center;
   }
 }

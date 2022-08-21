@@ -28,6 +28,8 @@
   .feedback__preamble {
     padding-top: 64px;
     padding-bottom: 102px;
+    padding-left: 107px;
+    padding-right: 106px;
   }
 }
 
@@ -35,6 +37,8 @@
   .feedback__preamble {
     padding-top: 115px;
     padding-bottom: 67px;
+    padding-left: 262px;
+    padding-right: 263px;
   }
 }
 
@@ -43,7 +47,24 @@
   margin-bottom: 24px;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback__title {
+    margin-bottom: 20px;
+  }
+}
+
 .feedback__subtitle {
   margin: 0;
 }
 
+@media (min-width: $tablet-width) {
+  .feedback__subtitle {
+    line-height: 24px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback__subtitle {
+    line-height: 21px;
+  }
+}

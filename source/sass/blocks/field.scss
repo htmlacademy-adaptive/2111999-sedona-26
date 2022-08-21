@@ -4,7 +4,7 @@
 
 @media (min-width: $desktop-width) {
   .field--name {
-    width: 402px;
+    width: 430px;
   }
 }
 
@@ -21,12 +21,32 @@
 .field__field-input {
   margin: 0;
   width: 100%;
-  padding: 16px;
-  border: none;
+  padding: 12px;
   font-family: inherit;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  border: 4px solid transparent;
+  outline: none;
+}
+
+.field__field-input:hover {
+  background: $input-base-hover;
+}
+
+
+.field__field-input:not(:placeholder-shown):focus {
+  background: $input-secondary-active;
+  border: 4px solid $input-base-hover;
+}
+
+.field__field-input:active {
+  background: $input-secondary-active;
+  border: 4px solid $input-base-hover;
+}
+
+.field__field-input:disabled {
+  background: #b7b4b4;
 }
 
 @media (min-width: $desktop-width) {
@@ -37,4 +57,35 @@
 
 .field__field-input:-moz-placeholder {
   color: $input-placeholder;
+}
+
+.field--decor-phone,
+.field--decor-email {
+  position: relative;
+}
+
+.field--decor-phone::before {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  bottom: 0;
+  right: 0;
+  background: #e6e6e6;
+  background-image: url("../images/icons/form-icon-telephon.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.field--decor-email::before {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  bottom: 0;
+  right: 0;
+  background: #e6e6e6;
+  background-image: url("../images/icons/form-icon-mail.svg");
+  background-repeat: no-repeat;
+  background-position: center;
 }

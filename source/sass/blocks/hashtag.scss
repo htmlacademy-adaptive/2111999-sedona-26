@@ -5,3 +5,12 @@
 .hashtag__link {
   text-decoration: none;
 }
+
+.hashtag__link:hover {
+  color: $text-additional-hover;
+}
+
+.hashtag__link:active {
+  color: $text-icon-active;
+}
+

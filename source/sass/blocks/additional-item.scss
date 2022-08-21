@@ -1,15 +1,141 @@
+.additional-item {
+  padding-left: 48px;
+  padding-top: 8px;
+  text-align: left;
+  position: relative;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-item {
+    padding: 158px 32px 59px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-item {
+    padding-bottom: 80px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.additional-item--housing::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background-image: url("../images/icons/icon-house.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-item--housing::before {
+    width: 75px;
+    height: 75px;
+    top: 60px;
+    left: 50%;
+    transform: translate(-50%);
+    background-size: 100%;
+  }
+}
+
+.additional-item--food::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background-image: url("../images/icons/icon-food.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-item--food::before {
+    width: 75px;
+    height: 75px;
+    top: 63px;
+    left: 50%;
+    transform: translate(-50%);
+    background-size: 100%;
+  }
+}
+
+.additional-item--gifts::before {
+  content: "";
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  top: 0;
+  left: 0;
+  background-image: url("../images/icons/icon-gifts.svg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-item--gifts::before {
+    width: 75px;
+    height: 75px;
+    top: 57px;
+    left: 50%;
+    transform: translate(-50%);
+    background-size: 100%;
+  }
+}
+
+
 .additional-item__title {
   margin: 0;
   margin-bottom: 16px;
   text-align: left;
 }
 
+@media (min-width: $desktop-width) {
+  .additional-item__title {
+    margin-bottom: 21px;
+  }
+}
+
+
 @media (min-width: $tablet-width) {
   .additional-item .additional-item__title {
     text-align: center;
+    max-width: 300px;
   }
 }
 
 .additional-item__description {
   margin: 0;
+}
+
+.additional-item__description--food-align br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .additional-item__description--food-align br {
+    display: block;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .additional-item__description--food-align br {
+    display: none;
+  }
+}
+
+.additional-item__description--gifts-align br {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .additional-item__description--gifts-align br {
+    display: block;
+  }
 }

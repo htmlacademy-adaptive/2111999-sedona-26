@@ -1,0 +1,14 @@
+.button-like {
+  background-image: url("../images/icons/like-icon.svg");
+  background-color: transparent;
+  width: 23px;
+  height: 21px;
+  border: none;
+  fill: rgba($base-support, 0.3);
+}
+
+@media (min-width: $desktop-width) {
+  .button-like {
+    fill: $background-base;
+  }
+}

@@ -22,3 +22,33 @@
     text-align: left;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .heading {
+    font-size: 21px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .heading--small-size {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .heading--large-size {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .heading--huge-size {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .heading--huge-line-height {
+    line-height: 40px;
+  }
+}

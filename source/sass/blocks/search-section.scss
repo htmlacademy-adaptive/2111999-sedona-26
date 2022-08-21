@@ -24,6 +24,28 @@
   margin-bottom: 33px;
 }
 
+@media (min-width: $tablet-width) {
+  .search-section__description {
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .search-section__description {
+    margin-bottom: 46px;
+  }
+}
+
+.search-section__description br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .search-section__description br {
+    display: block;
+  }
+}
+
 .search-section__button {
   width: 284px;
   padding: 16px 45px;

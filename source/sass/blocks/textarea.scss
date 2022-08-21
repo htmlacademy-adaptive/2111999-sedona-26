@@ -18,6 +18,15 @@
   }
 }
 
+.textarea__textarea-field:hover {
+  background: $input-base-hover;
+}
+
+.textarea__textarea-field:active {
+  background-color: $input-base-active;
+  outline: none;
+}
+
 @media (min-width: $tablet-width) {
   .textarea__textarea-field {
     width: 648px;
