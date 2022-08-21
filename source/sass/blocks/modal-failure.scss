@@ -15,7 +15,7 @@
 
 @media (min-width: $tablet-width) {
   .modal-failure__content {
-    padding: 50px 47px 49px 46px;
+    padding: 38px 47px 49px 47px;
   }
 }
 
@@ -24,9 +24,31 @@
   margin-bottom: 25px;
 }
 
+.modal-failure__title--align br {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-failure__title--align br {
+    display: block;
+  }
+}
+
 .modal-failure__description {
   margin-top: 0;
   margin-bottom: 27px;
+}
+
+@media (min-width: $tablet-width) {
+  .modal-failure__description {
+    margin-bottom: 57px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .modal-failure__description {
+    margin-bottom: 40px;
+  }
 }
 
 .modal-failure .modal-failure__button {

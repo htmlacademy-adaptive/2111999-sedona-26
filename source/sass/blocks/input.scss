@@ -1,3 +1,17 @@
 input {
   background-color: $input-base;
 }
+
+.input--decor-phone {
+  position: relative;
+}
+
+.input--decor-phone::before {
+  content: "";
+  position: absolute;
+  width: 58px;
+  height: 58px;
+  top: 0;
+  right: 0;
+  background-color: #e6e6e6;
+}

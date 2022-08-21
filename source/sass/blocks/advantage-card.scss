@@ -4,16 +4,11 @@
   &--key {
     background-color: $background-secondary;
     color: $text-secondary;
-    padding: 39px 16px 35px 15px;
+    padding: 40px 16px 35px;
   }
 
   &--start {
-    padding-top: 54px;
-  }
-
-  &--base {
-    background-color: $background-additional;
-    padding: 24px 16px 24px 16px;
+    padding-top: 70px;
   }
 }
 
@@ -31,26 +26,13 @@
 
 @media (min-width: $tablet-width) {
   .advantage-card--key {
-    padding: 40px 32px 43px 32px;
+    padding: 40px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantage-card--key {
-    padding: 47px 52px 56px 53px;
-  }
-}
-
-@media (min-width: $tablet-width) {
-  .advantage-card--base {
-    min-height: 256px;
-    padding: 42px 34px 41px 33px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .advantage-card--base {
-    padding: 43px 54px 62px 54px;
+    padding: 48px 55px 53px;
   }
 }
 
@@ -61,15 +43,47 @@
   margin-bottom: 11px;
 }
 
+
+.advantage-card__title--devils-bridge-align br {
+  display: none;
+}
+
 @media (min-width: $tablet-width) {
-  .advantage-card__title {
-    font-size: 21px;
+  .advantage-card__title--devils-bridge-align br {
+    display: block;
   }
 }
+
+.advantage-card__title--town-align br {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-card__title--town-align br {
+    display: block;
+  }
+}
+
+.advantage-card__description--devils-bridge-align br {
+  display: none;
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-card__description--devils-bridge-align br {
+    display: block;
+  }
+}
+
 
 .advantage-card__number {
   display: block;
   margin-bottom: 17px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantage-card__number {
+    margin-bottom: 23px;
+  }
 }
 
 .advantage-card__description {

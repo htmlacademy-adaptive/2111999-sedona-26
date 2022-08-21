@@ -54,7 +54,7 @@
       <div class="feedback__wrapper">
 
         <div class="feedback__preamble">
-          <h2 class="feedback__title heading">Оставьте свой отзыв</h2>
+          <h2 class="feedback__title heading heading--huge-size">Оставьте свой отзыв</h2>
         <p class="feedback__subtitle">Помогите нашим отелям стать лучше! Оставьте отзыв о
           них, а также о посещенных вами достопримечательностях</p>
         </div>
@@ -93,15 +93,15 @@
               <h2 class="field-group__title heading">Контактная информация:</h2>
 
               <ul class="field-group__list">
-                <li class="field-group__item field-group__item--content-right">
-                  <div class="field field--contacts field--phone">
+                <li class="field-group__item">
+                  <div class="field field--contacts field--decor-phone">
                   <label class="field__label" for="telephone">Контактный телефон*:</label>
                   <input class="field__field-input input" type="tel" id="telephone" name="telephone" required placeholder="Введите телефон">
                 </div>
                 </li>
 
-                <li class="field-group__item field-group__item--content-right">
-                  <div class="field field--contacts field--email">
+                <li class="field-group__item">
+                  <div class="field field--contacts field--decor-email">
                   <label class="field__label" for="email">Электронная почта*:</label>
                   <input class="field__field-input input" type="email" id="email" name="email" required placeholder="Введите e-mail">
                 </div>
@@ -111,11 +111,9 @@
           </div>
 
           <div class="form__group field-group field-group--radio">
-            <div class="field-group__container">
-              <h2 class="field-group__title heading field-group__title--line">Ваше общее впечатление:</h2>
-            </div>
+              <h2 class="field-group__title heading field-group__title--decorated-line"><span>Ваше общее впечатление:</span></h2>
 
-            <ul class="field-group__list field-group__list--radio">
+              <ul class="field-group__list field-group__list--radio">
               <li class="field-group__item">
                 <label class="selection">
                 <input class="selection__control-input visually-hidden" type="radio"name="feeling" value="positive" checked>
@@ -143,9 +141,7 @@
           </div>
 
           <div class="form__group field-group field-group--checkbox">
-            <div class="field-group__container">
-              <h2 class="field-group__title heading field-group__title--line">Посещенные <br> достопримечательности:</h2>
-            </div>
+              <h2 class="field-group__title heading field-group__title--decorated-line"><span>Посещенные <br> достопримечательности:</span></h2>
 
             <ul class="field-group__list field-group__list--checkbox">
               <li class="field-group__item">
@@ -183,9 +179,7 @@
           </div>
 
           <div class="form__group field-group field-group--textarea">
-            <div class="field-group__container">
-              <h2 class="field-group__title heading field-group__title--line">Опишите свои эмоции:</h2>
-            </div>
+              <h2 class="field-group__title heading field-group__title--decorated-line"><span>Опишите свои эмоции:</span></h2>
             <p class="field-group__textarea textarea">
               <textarea class="textarea__textarea-field" name="comment"
                 id="comment-field" placeholder="Опишите подробно все свои восторги"></textarea>
@@ -208,7 +202,7 @@
 
       <section class="page-footer__hashtag hashtag">
         <h3 class="visually-hidden">Хэштег visitsedona</h3>
-        <a class="hashtag__link heading heading--large-size" href="https://twitter.com/hashtag/visitsedona">#Visitsedona</a>
+        <a class="hashtag__link heading" href="https://twitter.com/hashtag/visitsedona">#Visitsedona</a>
       </section>
 
       <section class="page-footer__social social">
@@ -256,7 +250,7 @@
   <div class="modal-conteiner modal-conteiner--close">
     <div class="modal modal-failure">
       <section class="modal-failure__content">
-        <h2 class="modal-failure__title heading">Что-то пошло не так!</h2>
+        <h2 class="modal-failure__title heading modal-failure__title--align heading--huge-size heading--huge-line-height">Что-то пошло<br> не так!</h2>
         <p class="modal-failure__description">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
         </p>
         <button class="modal-failure__button button button--block button--block-size-s" type="button">Oк</button>
@@ -267,8 +261,8 @@
   <div class="modal-conteiner modal-conteiner--close">
     <div class="modal modal-success">
       <section class="modal-success__content">
-        <h2 class="modal-success__title heading">Ваш отзыв отправлен!</h2>
-        <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам. В ближайшее время
+        <h2 class="modal-success__title heading heading--huge-size">Ваш отзыв отправлен!</h2>
+        <p class="modal-success__description">Спасибо за ваше участие, ваш отзыв уже поступил к нам.<br> В ближайшее время
           мы опубликуем его на сайте.</p>
         <button class="modal-success__button button button--block button--block-size-s" type="button">Закрыть окно</button>
       </section>

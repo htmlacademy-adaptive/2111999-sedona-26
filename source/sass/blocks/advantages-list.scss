@@ -7,3 +7,22 @@
     flex-wrap: wrap;
   }
 }
+
+.advantages-list__item--base {
+  background-color: $background-additional;
+  padding: 25px 20px 25px 20px;
+}
+
+@media (min-width: $tablet-width) {
+  .advantages-list__item--base {
+    width: 33.3%;
+    flex-grow: 1;
+    padding: 42px 35px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages-list__item--base {
+    padding: 43px 43px 62px 43px;
+  }
+}
