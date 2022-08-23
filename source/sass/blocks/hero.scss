@@ -1,13 +1,18 @@
 .hero {
   color: $text-additional;
   background-color: $background-img;
-  background-image: url("../images/hero-background.jpg");
+  background-image: url("../images/hero/hero-background-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   text-align: center;
   padding: 90px 19px 85px 19px;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/hero/hero-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 
   &::after {
     content: "";
@@ -19,6 +24,28 @@
     background-image: url("../images/divider.svg");
     background-repeat: no-repeat;
     background-size: cover;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .hero {
+    background-image: url("../images/hero/hero-background-tablet@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/hero/hero-background-tablet@2x.jpg");
+      background-size: 768px auto;
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .hero {
+    background-image: url("../images/hero/hero-background-desktop@1x.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/hero/hero-background-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
 
@@ -54,32 +81,70 @@
     width: 461px;
     height: 350px;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 460px;
+    height: 350px;
+  }
 }
 
 .hero--modified {
+  max-height: 158px;
   color: $text-additional;
   background-color: $background-img;
-  background-image: url("../images/hero-background-catalog.jpg");
+  background-image: url("../images/hero/hero-background-modified.jpg");
+  background-position: 50% -55px;
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
   text-align: center;
   padding: 52px 46px 67px 45px;
   position: relative;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../images/hero/hero-background-modified@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 @media (min-width: $tablet-width) {
   .hero--modified {
+    max-height: 290px;
     padding: 95px 155px 117px;
+    background-image: url("../images/hero/hero-background-modified-tablet@1x.jpg");
+    background-position: 50% -55px;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/hero/hero-background-modified-table@2x.jpg");
+      background-size: 768px auto;
+    }
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero--modified {
+    max-height: 301px;
     padding: 101px 371px 120px 369px;
+    background-image: url("../images/hero/hero-background-modified-desktop@1x.jpg");
+    background-position: 50% -55px;
+    background-size: cover;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../images/hero/hero-background-modified-desktop@2x.jpg");
+      background-size: 1200px auto;
+    }
   }
 }
 
 .hero__slogan--abbreviated {
   display: block;
+
+  @media (min-width: $tablet-width) {
+    width: 457px;
+    height: 78px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 459px;
+    height: 80px;
+  }
 }
