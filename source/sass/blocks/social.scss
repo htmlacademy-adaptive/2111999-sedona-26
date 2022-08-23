@@ -9,7 +9,6 @@
 }
 
 .social__item {
-  background-color: $background-secondary;
   list-style-type: none;
 }
 
@@ -19,8 +18,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: $background-secondary;
+  color: $text-secondary;
 }
 
-.social__item-image {
-  fill: $background-base;
+.social__link:hover {
+  background-color: $button-base-hover;
+}
+
+.social__link:active {
+  background-color: $button-base-active;
+  color: $text-secondary-active;
 }
