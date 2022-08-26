@@ -11,6 +11,7 @@
   @media (min-width: $tablet-width) {
     padding: 36px 60px 36px 45px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
   }
@@ -22,7 +23,12 @@
 }
 
 .page-footer__hashtag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
   margin-bottom: 34px;
+  max-width: 166px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
@@ -30,9 +36,14 @@
 }
 
 .page-footer__social {
+  max-width: 156px;
   margin-bottom: 40px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 0;
   }
+}
+
+.page-footer__copyright {
+  max-width: 156px;
 }

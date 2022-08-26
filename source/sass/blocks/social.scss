@@ -22,11 +22,18 @@
   color: $text-secondary;
 }
 
+.social__item-image {
+  color: $background-base;
+}
+
 .social__link:hover {
   background-color: $button-base-hover;
 }
 
 .social__link:active {
   background-color: $button-base-active;
+}
+
+.social__link:active .social__item-image {
   color: $text-secondary-active;
 }

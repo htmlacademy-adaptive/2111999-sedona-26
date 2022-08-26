@@ -5,13 +5,23 @@
   border: none;
   color: rgba($base-support, 0.3);
   padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+}
+
+.button-like__icon {
+  color: rgba($base-support, 0.3);
 }
 
 @media (min-width: $desktop-width) {
-  .button-like {
+  .button-like__icon {
     color: $background-base;
   }
 }
+
+.button-like:hover .button-like__icon {
+  color: $text-additional-hover;
+}
+
+.button-like:active .button-like__icon {
+  opacity: 0.6;
+}
+

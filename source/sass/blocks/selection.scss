@@ -8,8 +8,14 @@
   background-color: $input-base-hover;
 }
 
-.selection:active .selection__control-mark {
+.selection__control-input:focus + .selection__control-mark {
+  outline: none;
   background-color: $input-base-active;
+}
+
+
+.selection__control-input:focus + .selection__control-mark::before {
+  opacity: 0.3;
 }
 
 .selection__control-input:disabled + .selection__control-mark {

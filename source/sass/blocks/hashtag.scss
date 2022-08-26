@@ -1,9 +1,10 @@
-.hashtag {
-  text-align: center;
-}
-
 .hashtag__link {
   text-decoration: none;
+  font-family: inherit;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: $text-base;
 }
 
 .hashtag__link:hover {

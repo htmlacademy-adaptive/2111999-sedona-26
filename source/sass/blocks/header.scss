@@ -2,6 +2,12 @@
   position: relative;
 }
 
+@media (min-width: $tablet-width) {
+  .header {
+    min-height: 56px;
+  }
+}
+
 .header__main-logo {
   position: absolute;
   left: 50%;
@@ -14,4 +20,12 @@
   .header__main-logo {
     z-index: 3;
   }
+}
+
+.header__main-logo:hover .header__main-logo-image {
+  opacity: 0.8;
+}
+
+.header__main-logo:active .header__main-logo-image {
+  opacity: 0.5;
 }
