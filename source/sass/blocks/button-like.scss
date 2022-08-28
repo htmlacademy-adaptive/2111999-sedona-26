@@ -8,17 +8,17 @@
 }
 
 .button-like__icon {
-  color: rgba($base-support, 0.3);
+  fill: rgba($base-support, 0.3);
 }
 
 @media (min-width: $desktop-width) {
   .button-like__icon {
-    color: $background-base;
+    fill: $background-base;
   }
 }
 
 .button-like:hover .button-like__icon {
-  color: $text-additional-hover;
+  fill: $text-additional-hover;
 }
 
 .button-like:active .button-like__icon {

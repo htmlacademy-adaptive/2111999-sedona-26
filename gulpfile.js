@@ -12,6 +12,7 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
+const cheerio = require('gulp-cheerio');
 
 // Styles
 
@@ -85,10 +86,18 @@ exports.createWebp = createWebp;
 // Sprite
 
 const sprite = () => {
-  return gulp.src("source/images/sprite.svg/*.svg")
+  return gulp.src("source/images/sprite/*.svg")
     .pipe(svgstore({
-      inlineSvg: true
+      inlineSvg: true,
+      cleanDefs: true
     }))
+    .pipe(cheerio({
+			run: function ($) {
+				$('[fill]').removeAttr('fill');
+				$('[style]').removeAttr('style');
+			},
+			parserOptions: { xmlMode: true }
+		}))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/images"));
 }
@@ -148,6 +157,7 @@ const watcher = () => {
   gulp.watch("source/js/script.js", gulp.series(scripts));
   gulp.watch("source/*.html", gulp.series(html, reload));
   gulp.watch("source/images/*.*",gulp.series(copyImages));
+  gulp.watch("source/images/sprite/*.*",gulp.series(sprite));
 }
 
 // Build

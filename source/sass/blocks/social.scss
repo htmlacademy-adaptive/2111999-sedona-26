@@ -23,8 +23,9 @@
 }
 
 .social__item-image {
-  color: $background-base;
+  fill: $background-base;
 }
+
 
 .social__link:hover {
   background-color: $button-base-hover;
@@ -35,5 +36,5 @@
 }
 
 .social__link:active .social__item-image {
-  color: $text-secondary-active;
+  fill: $text-secondary-active;
 }

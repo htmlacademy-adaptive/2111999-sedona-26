@@ -18,6 +18,10 @@
   align-items: center;
 }
 
+.copyright__logo-image {
+  fill: currentColor;
+}
+
 .copyright__logo:hover {
   color: $text-additional-hover;
 }
