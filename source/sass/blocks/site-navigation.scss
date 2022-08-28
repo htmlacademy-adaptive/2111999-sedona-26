@@ -12,7 +12,7 @@
 
   @media (min-width: $tablet-width) {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(5, 1fr);
     justify-content: center;
     align-items: center;
     margin: 0;
@@ -73,6 +73,35 @@
 @media (min-width: $tablet-width) {
   .site-navigation__item--current .site-navigation__link {
     color: $text-base-current;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .site-navigation__item--current:hover .site-navigation__link {
+    background-color: transparent;
+  }
+}
+
+.site-navigation__link:hover {
+  background-color: $button-base-hover;
+}
+
+@media (min-width: $tablet-width) {
+  .site-navigation__link:hover[href] {
+    background-color: transparent;
+    color: $text-additional-hover;
+  }
+}
+
+.site-navigation__link:active {
+  color: $text-secondary-active;
+  background-color: $button-base-active;
+}
+
+@media (min-width: $tablet-width) {
+  .site-navigation__link:active[href] {
+    background-color: transparent;
+    color: $text-additional-active;
   }
 }
 

@@ -70,6 +70,15 @@
   display: block;
 }
 
+.navigation--closed .navigation__toggle:hover {
+  opacity: 0.6;
+}
+
+.navigation--closed .navigation__toggle:active {
+  opacity: 0.3;
+}
+
+
 .navigation--opened .navigation__toggle {
   background-image: url("../images/icons/icon-closed.svg");
   background-position: center;
@@ -82,6 +91,14 @@
   padding: 15px;
   display: block;
   z-index: 3;
+}
+
+.navigation--opened .navigation__toggle:hover {
+  opacity: 0.6;
+}
+
+.navigation--opened .navigation__toggle:active {
+  opacity: 0.3;
 }
 
 @media (min-width: $tablet-width) {
@@ -97,6 +114,13 @@
 .navigation--nojs .navigation__wrapper {
   position: static;
   min-height: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .navigation__wrapper {
+    position: relative;
+    min-height: 56px;
+  }
 }
 
 .navigation--nojs .site-list__item {

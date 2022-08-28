@@ -3,7 +3,6 @@
 }
 
 .textarea__textarea-field {
-  border: 0;
   padding: 16px 16px 16px 16px;
   width: 279px;
   min-height: 150px;
@@ -12,6 +11,7 @@
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
+  border: 4px solid transparent;
 
   &::-moz-placeholder {
     color: $input-placeholder;
@@ -22,8 +22,15 @@
   background: $input-base-hover;
 }
 
+.textarea__textarea-field:focus {
+  background-color: $input-secondary-active;
+  border: 4px solid #e5e5e5;
+  outline: none;
+}
+
 .textarea__textarea-field:active {
-  background-color: $input-base-active;
+  background-color: $input-secondary-active;
+  border: 4px solid #e5e5e5;
   outline: none;
 }
 

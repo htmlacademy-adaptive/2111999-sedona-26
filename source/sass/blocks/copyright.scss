@@ -1,27 +1,32 @@
 .copyright {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
 }
 
-.copyright__title {
+.copyright__description {
   font: inherit;
   margin: 0;
   margin-right: 13px;
 }
 
-.copyright__title:hover {
-  color: $text-additional-hover;
+.copyright__logo {
+  color: $text-base;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.copyright__title:active {
-  color: $text-icon-active;
+.copyright__logo-image {
+  fill: currentColor;
 }
 
 .copyright__logo:hover {
-  fill: $text-additional-hover;
+  color: $text-additional-hover;
 }
 
 .copyright__logo:active {
-  fill: $text-icon-active;
+  color: $text-base-active;
 }
+

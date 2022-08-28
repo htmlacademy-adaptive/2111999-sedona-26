@@ -12,3 +12,9 @@
   color: $text-additional;
   background-color: $background-base;
 }
+
+@media (min-width: $desktop-width) {
+  .page__body {
+    background-color: #f2f2f2;
+  }
+}

@@ -76,3 +76,15 @@
     grid-column: 1/4;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .gallery__item:nth-child(odd):not(:first-child) .photo-card__label {
+    background-color: $background-label-secondary;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery__item:nth-child(odd):not(:first-child) .photo-card__label {
+    background-color: rgba($base-support, 0.3);
+  }
+}

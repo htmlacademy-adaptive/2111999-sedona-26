@@ -27,20 +27,20 @@
   line-height: 26px;
   font-weight: 700;
   border: 4px solid transparent;
-  outline: none;
 }
 
 .field__field-input:hover {
   background: $input-base-hover;
 }
 
-
-.field__field-input:not(:placeholder-shown):focus {
+.field__field-input:focus {
+  outline: none;
   background: $input-secondary-active;
   border: 4px solid $input-base-hover;
 }
 
 .field__field-input:active {
+  outline: none;
   background: $input-secondary-active;
   border: 4px solid $input-base-hover;
 }

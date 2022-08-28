@@ -8,6 +8,7 @@
   display: flex;
   flex-direction: column;
   flex-grow: 1;
+  background-color: $background-base;
 
   @media (min-width: $tablet-width) {
     width: 768px;
@@ -15,5 +16,6 @@
 
   @media (min-width: $desktop-width) {
     width: 1200px;
+    box-shadow: 0 5px 15px rgba(0, 1, 1, 0.2);
   }
 }
