@@ -13,8 +13,9 @@
   margin-bottom: 35px;
 }
 
-.advantages__title {
-  @media (min-width: $tablet-width) {
+
+@media (min-width: $tablet-width) {
+  .advantages__title {
     margin-bottom: 30px;
   }
 }
