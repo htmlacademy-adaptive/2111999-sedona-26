@@ -19,14 +19,14 @@
 
 .gallery-section__preamble {
   text-align: center;
-  padding-top: 30px;
-  padding-bottom: 20px;
+  padding-top: 37px;
+  padding-bottom: 36px;
 }
 
 @media (min-width: $tablet-width) {
   .gallery-section__preamble {
     padding-top: 66px;
-    padding-bottom: 67px;
+    padding-bottom: 80px;
     padding-right: 95px;
     padding-left: 95px;
   }
@@ -34,13 +34,25 @@
 
 @media (min-width: $desktop-width) {
   .gallery-section__preamble {
-    padding: 100px 372px 65px 370px;
+    padding: 98px 372px 89px 370px;
   }
 }
 
 .gallery-section__title {
   margin: 0;
   margin-bottom: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .gallery-section__title {
+    margin-bottom: 33px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .gallery-section__title {
+    margin-bottom: 32px;
+  }
 }
 
 .gallery-section__subtitle {

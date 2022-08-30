@@ -1,6 +1,6 @@
 .photo-card__link {
   display: block;
-  margin-bottom: 15px;
+  margin-bottom: 16px;
 }
 
 @media (min-width: $tablet-width) {
@@ -69,9 +69,15 @@
   align-items: flex-end;
 }
 
+@media (min-width: $tablet-width) {
+  .photo-card__like-wrapper {
+    margin-bottom: 8px;
+  }
+}
+
 .photo-card__name {
   margin-top: 0;
-  margin-bottom: 2px;
+  margin-bottom: 1px;
 }
 
 @media (min-width: $desktop-width) {
@@ -102,7 +108,7 @@
 .photo-card__button {
   cursor: pointer;
   display: block;
-  margin-right: 14px;
+  margin-right: 12px;
 }
 
 @media (min-width: $tablet-width) {
