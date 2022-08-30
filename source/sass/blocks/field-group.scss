@@ -1,5 +1,5 @@
 .field-group {
-  padding-top: 24px;
+  padding-top: 25px;
   position: relative;
 
   &--name {
@@ -19,7 +19,7 @@
   }
 
   &--textarea {
-    padding-bottom: 56px;
+    padding-bottom: 50px;
   }
 }
 
@@ -71,13 +71,13 @@
 
 @media (min-width: $tablet-width) {
   .field-group--radio {
-    margin-bottom: 48px;
+    margin-bottom: 49px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .field-group--radio {
-    margin-bottom: 56px;
+    margin-bottom: 57px;
   }
 }
 
@@ -95,7 +95,7 @@
 
 @media (min-width: $tablet-width) {
   .field-group--textarea {
-    margin-bottom: 48px;
+    margin-bottom: 49px;
   }
 }
 
@@ -112,6 +112,30 @@
   }
 }
 
+@media (min-width: $tablet-width) {
+  .field-group__title--align-contacts {
+    margin-left: -39px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-group__title--align-contacts {
+    margin-left: 0;
+    margin-right: 67px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .field-group__title--align-name {
+    margin-left: 41px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-group__title--align-name {
+    margin-left: 62px;
+  }
+}
 
 .field-group__list {
   padding-left: 0;

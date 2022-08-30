@@ -40,7 +40,7 @@
 
 @media (min-width: $desktop-width) {
   .form__field-group-wrapper {
-    margin-bottom: 56px;
+    margin-bottom: 55px;
   }
 }
 
@@ -81,6 +81,7 @@
   .form__button {
     width: 324px;
     margin-bottom: 0;
+    padding: 19px 60px 13px 48px;
   }
 }
 
@@ -100,6 +101,8 @@
 @media (min-width: $tablet-width) {
   .form__legend {
     width: 192px;
+    font-size: 14px;
+    padding-top: 7px;
   }
 }
 

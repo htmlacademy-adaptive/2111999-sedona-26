@@ -4,11 +4,11 @@
   &--key {
     background-color: $background-secondary;
     color: $text-secondary;
-    padding: 40px 16px 40px;
+    padding: 40px 16px 39px;
   }
 
   &--start {
-    padding-top: 72px;
+    padding-top: 71px;
   }
 }
 
@@ -26,13 +26,13 @@
 
 @media (min-width: $tablet-width) {
   .advantage-card--key {
-    padding: 40px 30px;
+    padding: 43px 30px 40px 30px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .advantage-card--key {
-    padding: 48px 55px 53px;
+    padding: 49px 55px 53px;
   }
 }
 
@@ -41,6 +41,12 @@
   padding: 0;
   border: 0;
   margin-bottom: 11px;
+}
+
+@media (min-width: $desktop-width) {
+  .advantage-card__title {
+    margin-bottom: 13px;
+  }
 }
 
 

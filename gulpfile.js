@@ -12,7 +12,6 @@ const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const del = require("del");
 const sync = require("browser-sync").create();
-const cheerio = require('gulp-cheerio');
 
 // Styles
 
@@ -56,10 +55,10 @@ exports.scripts = scripts;
 
 const optimizeImages = () => {
   return gulp.src("source/images/**/*.{png,jpg,svg}")
-    .pipe(imagemin([
-      imagemin.mozjpeg({ progressive: true }),
-      imagemin.optipng({ optimizationLevel: 3 }),
-      imagemin.svgo()
+  .pipe(imagemin([
+    imagemin.mozjpeg({progressive: true}),
+    imagemin.optipng({optimizationLevel: 3}),
+    imagemin.svgo()
     ]))
     .pipe(gulp.dest("build/images"))
 }
@@ -91,13 +90,6 @@ const sprite = () => {
       inlineSvg: true,
       cleanDefs: true
     }))
-    .pipe(cheerio({
-			run: function ($) {
-				$('[fill]').removeAttr('fill');
-				$('[style]').removeAttr('style');
-			},
-			parserOptions: { xmlMode: true }
-		}))
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/images"));
 }

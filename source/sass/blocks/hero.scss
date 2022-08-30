@@ -1,7 +1,7 @@
 .hero {
   color: $text-additional;
   background-color: $background-img;
-  background-image: url("../images/hero/hero-background-mobile@1x.jpg");
+  background-image: url("../images/hero/hero-background-mobile@1x.webp");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -13,7 +13,7 @@
   min-height: 389px;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../images/hero/hero-background-mobile@2x.jpg");
+    background-image: url("../images/hero/hero-background-mobile@2x.webp");
     background-size: 320px auto;
   }
 
@@ -34,10 +34,10 @@
 @media (min-width: $tablet-width) {
   .hero {
     min-height: 518px;
-    background-image: url("../images/hero/hero-background-tablet@1x.jpg");
+    background-image: url("../images/hero/hero-background-tablet@1x.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../images/hero/hero-background-tablet@2x.jpg");
+      background-image: url("../images/hero/hero-background-tablet@2x.webp");
       background-size: 768px auto;
     }
   }
@@ -45,10 +45,10 @@
 
 @media (min-width: $desktop-width) {
   .hero {
-    background-image: url("../images/hero/hero-background-desktop@1x.jpg");
+    background-image: url("../images/hero/hero-background-desktop@1x.webp");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../images/hero/hero-background-desktop@2x.jpg");
+      background-image: url("../images/hero/hero-background-desktop@2x.webp");
       background-size: 1200px auto;
     }
   }
@@ -56,13 +56,13 @@
 
 @media (min-width: $tablet-width) {
   .hero::after {
-    background-image: url("../images/divider-tablet.svg");
+    background-image: url("../images/divider-tablet-desktop.svg");
   }
 }
 
 @media (min-width: $desktop-width) {
   .hero::after {
-    background-image: url("../images/divider-desktop.svg");
+    background-image: url("../images/divider-tablet-desktop.svg");
   }
 }
 
@@ -70,6 +70,7 @@
   display: block;
 
   @media (min-width: $tablet-width) {
+    margin: 77px auto auto;
     width: 461px;
     height: 350px;
   }
@@ -84,7 +85,7 @@
   min-height: 158px;
   color: $text-additional;
   background-color: $background-img;
-  background-image: url("../images/hero/hero-background-modified.jpg");
+  background-image: url("../images/hero/hero-background-modified.webp");
   background-position: bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -94,7 +95,7 @@
   justify-content: center;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../images/hero/hero-background-modified@2x.jpg");
+    background-image: url("../images/hero/hero-background-modified@2x.webp");
     background-size: 320px auto;
   }
 }
@@ -102,11 +103,11 @@
 @media (min-width: $tablet-width) {
   .hero--modified {
     min-height: 290px;
-    background-image: url("../images/hero/hero-background-modified-tablet@1x.jpg");
+    background-image: url("../images/hero/hero-background-modified-tablet@1x.webp");
     background-position: bottom;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../images/hero/hero-background-modified-table@2x.jpg");
+      background-image: url("../images/hero/hero-background-modified-table@2x.webp");
       background-size: 768px auto;
     }
   }
@@ -115,12 +116,12 @@
 @media (min-width: $desktop-width) {
   .hero--modified {
     min-height: 301px;
-    background-image: url("../images/hero/hero-background-modified-desktop@1x.jpg");
+    background-image: url("../images/hero/hero-background-modified-desktop@1x.webp");
     background-position: 50% -55px;
     background-size: cover;
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../images/hero/hero-background-modified-desktop@2x.jpg");
+      background-image: url("../images/hero/hero-background-modified-desktop@2x.webp");
       background-size: 1200px auto;
     }
   }
@@ -128,13 +129,16 @@
 
 .hero__slogan--abbreviated {
   display: block;
+  margin: 52px auto auto;
 
   @media (min-width: $tablet-width) {
+    margin-top: 95px;
     width: 457px;
     height: 78px;
   }
 
   @media (min-width: $desktop-width) {
+    margin-top: 101px;
     width: 459px;
     height: 80px;
   }
