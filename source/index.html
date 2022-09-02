@@ -6,10 +6,13 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../favicon.ico">
-  <link rel="icon" href="../images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple-icon-180x180.png">
-  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/favicons/apple-icon-180x180.png">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="preload" href="./js/script.min.js" as="script">
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -46,7 +49,7 @@
       </nav>
     </header>
 
-  <main class="main-index main-container">
+  <main class="main-index">
     <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
 
     <div class="main-container__hero hero">
@@ -68,7 +71,7 @@
             <li class="advantages-list__item advantages-item">
               <div class="advantages-item__wrapper-group">
                 <div class="advantages-item__card advantage-card advantage-card--key advantage-card--start">
-                  <h3 class="advantage-card__title advantage-card__title--town-align heading heading--secondary-color">Настоящий<br> городок&nbsp;</h3>
+                  <h3 class="advantage-card__title advantage-card__title--town-align heading heading--secondary-color">Настоящий <br> городок&nbsp;</h3>
                   <span class="advantage-card__number">— №1 —&nbsp;&nbsp;</span>
                   <p class="advantage-card__description">Седона не аттракцион для туристов,&nbsp; там течет своя жизнь&nbsp;</p>
                 </div>
@@ -91,7 +94,7 @@
               </li>
               <li class="additional__item additional-item additional-item--food additional-item--left-max">
                   <h3 class="additional-item__title heading heading--position-left">Еда</h3>
-                  <p class="additional-item__description additional-item__description--food-align">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
+                  <p class="additional-item__description additional-item__description--food-align">Всегда заказывайте фирменный бургер, <br> вы не разочаруетесь!</p>
                 </li>
               <li class="additional__item additional-item additional-item--gifts additional-item--left-min">
                   <h3 class="additional-item__title heading heading--position-left">Сувениры</h3>
@@ -103,9 +106,9 @@
             <li class="advantages-list__item advantages-item">
               <div class="advantages-item__wrapper-group">
                 <div class="advantages-item__card advantage-card advantage-card--key advantages-item__card--order-second">
-                  <h3 class="advantage-card__title heading heading--secondary-color advantage-card__title--devils-bridge-align">Там есть<br> мост дьявола</h3>
+                  <h3 class="advantage-card__title heading heading--secondary-color advantage-card__title--devils-bridge-align">Там есть <br> мост дьявола</h3>
                   <span class="advantage-card__number">— №2 —</span>
-                  <p class="advantage-card__description advantage-card__description--devils-bridge-align">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
+                  <p class="advantage-card__description advantage-card__description--devils-bridge-align">Да, по нему можно пройти! <br> Если вы осмелитесь, конечно</p>
                 </div>
                 <picture>
                   <source type="image/webp" media="(min-width: 1200px)" srcset="images/advantage-foto/advantages-bridge-foto-desktop@1x.webp 1x, images/advantage-foto/advantages-bridge-foto-desktop@2x.webp 2x">
@@ -121,17 +124,17 @@
             </li>
 
             <li class="advantages-list__item advantages-item advantages-list__item--base advantages-item--border-bottom">
-                <h3 class="advantages-item__title advantages-item__title--square-align heading">Небольшая<br> площадь</h3>
+                <h3 class="advantages-item__title advantages-item__title--square-align heading">Небольшая <br> площадь</h3>
                 <span class="advantages-item__number">— №3 —</span>
                 <p class="advantages-item__description">Все интересные места находятся очень близко</p>
             </li>
             <li class="advantages-list__item advantages-item advantages-list__item--base advantages-item--border-bottom">
-                <h3 class="advantages-item__title heading advantages-item__title--road-align">Красивая<br> дорога</h3>
+                <h3 class="advantages-item__title heading advantages-item__title--road-align">Красивая <br> дорога</h3>
                 <span class="advantages-item__number">— №4 —</span>
                 <p class="advantages-item__description advantages-item__description--road-align">Ехать в Седону из Лас-Вегаса <br> совсем не скучно!</p>
             </li>
             <li class="advantages-list__item advantages-item advantages-list__item--base">
-                <h3 class="advantages-item__title heading advantages-item__title--tourists-align">Мало<br> туристов</h3>
+                <h3 class="advantages-item__title heading advantages-item__title--tourists-align">Мало <br> туристов</h3>
                 <span class="advantages-item__number">— №5 —</span>
                 <p class="advantages-item__description advantages-item__description--tourists-align">Большинство едет в Гранд каньон <br> и толпится там</p>
             </li>
@@ -141,7 +144,7 @@
 
     <section class="search-section">
         <h3 class="search-section__title heading heading--large-size">Заинтересовались?</h3>
-        <p class="search-section__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <p class="search-section__description">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-section__button button button--block" href="#">Найти гостиницу</a>
     </section>
 

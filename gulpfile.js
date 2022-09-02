@@ -72,6 +72,7 @@ const copyImages = () => {
 
 exports.images = copyImages;
 
+
 // WebP
 
 const createWebp = () => {

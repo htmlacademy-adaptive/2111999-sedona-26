@@ -6,10 +6,13 @@
   <title>HTML Academy: Седона</title>
   <link rel="stylesheet" href="./css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../favicon.ico">
-  <link rel="icon" href="../images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple-icon-180x180.png">
-  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/favicons/apple-icon-180x180.png">
+  <link rel="preload" href="./css/style.min.css" as="style">
+  <link rel="preload" href="./js/script.min.js" as="script">
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
@@ -45,7 +48,7 @@
   </nav>
   </header>
 
-  <main class="gallery-container main-container">
+  <main class="gallery-container">
     <h1 class="visually-hidden">Галлерея</h1>
 
     <div class="gallery-container__hero hero hero--modified">

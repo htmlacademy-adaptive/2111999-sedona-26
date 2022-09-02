@@ -8,7 +8,6 @@
 .copyright__description {
   font: inherit;
   margin: 0;
-  margin-right: 13px;
 }
 
 .copyright__logo {
@@ -20,6 +19,9 @@
 
 .copyright__logo-image {
   fill: currentColor;
+  width: 100%;
+  min-height: 34px;
+  margin-left: 13px;
 }
 
 .copyright__logo:hover {

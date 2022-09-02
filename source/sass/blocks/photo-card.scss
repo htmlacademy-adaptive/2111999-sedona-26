@@ -21,6 +21,8 @@
 .photo-card__image {
   display: block;
   height: auto;
+  background-color: #f2f2f2;
+  background-size: cover;
 }
 
 @media (min-width: $tablet-width) {
@@ -48,8 +50,9 @@
     background-color: $background-label;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     padding: 22px 20px 15px 20px;
+    max-height: 80px;
+    overflow-y: auto;
   }
 }
 
@@ -60,13 +63,13 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    min-height: 80px;
   }
 }
 
 .photo-card__like-wrapper {
   display: flex;
   align-items: flex-end;
+  align-self: center;
 }
 
 @media (min-width: $tablet-width) {

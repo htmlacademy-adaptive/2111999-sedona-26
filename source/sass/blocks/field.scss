@@ -55,7 +55,7 @@
   }
 }
 
-.field__field-input:-moz-placeholder {
+.field__field-input::placeholder {
   color: $input-placeholder;
 }
 

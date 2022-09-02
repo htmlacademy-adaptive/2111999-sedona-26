@@ -95,6 +95,12 @@
 
 @media (min-width: $tablet-width) {
   .field-group--textarea {
+    margin-bottom: 42px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .field-group--textarea {
     margin-bottom: 49px;
   }
 }
@@ -176,7 +182,7 @@
 
 @media (min-width: $desktop-width) {
   .field-group__list--checkbox {
-    grid-template-columns: 172px 170px 153px 184px;
+    grid-template-columns: 175px 170px 153px 184px;
     row-gap: 31px;
     column-gap: 64px;
     justify-content: center;
