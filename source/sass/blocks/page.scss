@@ -11,6 +11,8 @@
   text-transform: uppercase;
   color: $text-additional;
   background-color: $background-base;
+  min-height: 100%;
+  display: grid;
 }
 
 @media (min-width: $desktop-width) {

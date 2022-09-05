@@ -33,7 +33,6 @@
   background: #e5e5e5;
 }
 
-
 @media (min-width: $tablet-width) {
   .field-group::before {
     display: none;
@@ -54,20 +53,17 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .field-group--name {
     padding-bottom: 15px;
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .field-group--contacts {
     padding-bottom: 15px;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .field-group--radio {
@@ -95,10 +91,15 @@
 
 @media (min-width: $tablet-width) {
   .field-group--textarea {
-    margin-bottom: 49px;
+    margin-bottom: 42px;
   }
 }
 
+@media (min-width: $desktop-width) {
+  .field-group--textarea {
+    margin-bottom: 49px;
+  }
+}
 
 .field-group__title {
   margin: 0;
@@ -176,7 +177,7 @@
 
 @media (min-width: $desktop-width) {
   .field-group__list--checkbox {
-    grid-template-columns: 172px 170px 153px 184px;
+    grid-template-columns: 175px 170px 153px 184px;
     row-gap: 31px;
     column-gap: 64px;
     justify-content: center;
@@ -186,7 +187,6 @@
     padding-right: 44px;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .field-group__title--decorated-line {

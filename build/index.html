@@ -4,212 +4,179 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="./css/style.min.css">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" href="../favicon.ico">
-  <link rel="icon" href="../images/favicons/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="images/favicons/apple-icon-180x180.png">
-  <link rel="manifest" href="../manifest.webmanifest">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="icon" href="./images/favicons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="./images/favicons/apple-icon-180x180.png">
+  <link rel="stylesheet" href="./css/style.min.css">
+  <link rel="preload" href="./fonts/ptsans.woff2" type="font/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="./fonts/ptsansbold.woff2" type="font/woff2" as="font" crossorigin="anonymous">
 </head>
 
 <body class="page__body">
-
   <div class="page-container">
 
-  <header class="header">
-
+    <header class="header">
       <a class="header__main-logo" href="index.html">
-        <img class="header__main-logo-image" src="images/header-logo.svg" width="185" height="96"
-          alt="Логотип сайта городка Седона">
+        <img class="header__main-logo-image" src="images/header-logo.svg" width="185" height="96" alt="Логотип сайта городка Седона">
       </a>
-
-      <nav class="header__navigation navigation navigation--closed navigation--nojs">
-          <button class="navigation__toggle button" type="button">
-            <span class="visually-hidden">Открыть/закрыть меню</span>
-          </button>
-          <div class="navigation__wrapper">
-            <ul class="navigation__list site-navigation">
-              <li class="site-navigation__item site-navigation__item--current">
-                <a class="site-navigation__link button button--link">Главная</a>
-              </li>
-              <li class="site-navigation__item">
-                <a class="site-navigation__link button button--link" href="catalog.html">Фото и видео</a>
-              </li>
-              <li class="site-navigation__item">
-                <a class="site-navigation__link button button--link" href="form.html">Форма отзыва</a>
-              </li>
-              <li class="site-navigation__item">
-                <a class="site-navigation__link button button--link navigation__link--summary" href="https://htmlacademy.ru">Html academy</a>
-              </li>
-            </ul>
-          </div>
+      <nav class="header__navigation navigation navigation--closed navigation--nojs"> <!--при отключенном JavaScript, применяется класс nojs. При работоспособном js меню по умолчанию скрыто, показывается кнопка гамбургер-меню-->
+        <button class="navigation__toggle button" type="button">
+          <span class="visually-hidden">Открыть/закрыть меню</span>
+        </button>
+        <div class="navigation__wrapper">
+          <ul class="navigation__list site-navigation">
+            <li class="site-navigation__item site-navigation__item--current"> <!-- модификатор для активного пункта меню в навигации -->
+              <a class="site-navigation__link button button--link">Главная</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link button button--link" href="catalog.html">Фото и видео</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link button button--link" href="form.html">Форма отзыва</a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="site-navigation__link button button--link" href="https://htmlacademy.ru" target="_blank">Html academy</a>
+            </li>
+          </ul>
+        </div>
       </nav>
     </header>
 
-  <main class="main-index main-container">
-    <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
-
-    <div class="main-container__hero hero">
-      <img class="hero__slogan slogan" src="images/slogan.svg" width="282" height="214"
-        alt="WELCOME to the gorgeous SEDONA Because the Grand Canyon sucks!">
-    </div>
-
-    <section class="advantages">
-      <div class="advantages__preamble">
-        <h2 class="advantages__title heading">Седона — небольшой <br> городок в Аризоне, заслуживающий большего!
-        </h2>
-        <p class="advantages__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд
-          каньон!</p>
+    <main class="main-index">
+      <h1 class="visually-hidden">Добро пожаловать в Седону!</h1>
+      <div class="main-container__hero hero">
+        <img class="hero__slogan slogan" src="images/slogan.svg" width="282" height="214" alt="WELCOME to the gorgeous SEDONA Because the Grand Canyon sucks!">
       </div>
 
+      <section class="advantages">
+        <div class="advantages__preamble">
+          <h2 class="advantages__title heading">Седона — небольшой <br> городок в Аризоне, заслуживающий большего!
+          </h2>
+          <p class="advantages__subtitle">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        </div>
         <div class="advantages__wrapper">
           <ol class="advantages__list advantages-list">
-
             <li class="advantages-list__item advantages-item">
               <div class="advantages-item__wrapper-group">
-                <div class="advantages-item__card advantage-card advantage-card--key advantage-card--start">
-                  <h3 class="advantage-card__title advantage-card__title--town-align heading heading--secondary-color">Настоящий<br> городок&nbsp;</h3>
+                <div class="advantages-item__card advantage-card advantage-card--key advantage-card--start"> <!--Модификатор start необходим для того, чтобы задать первому (стартовому) блоку преимуществ увеличенный отступ сверху для декоративного элемента вышестоящей секции (на мобильной версии)-->
+                  <h3 class="advantage-card__title advantage-card__title--town-align heading heading--secondary-color">Настоящий <br> городок&nbsp;</h3> <!-- Модификатор align необходим для применения тега <br> в блоках с одним классом на разых расширениях viewport. Чтобы добиться максимального совпадения с макетом. -->
                   <span class="advantage-card__number">— №1 —&nbsp;&nbsp;</span>
                   <p class="advantage-card__description">Седона не аттракцион для туристов,&nbsp; там течет своя жизнь&nbsp;</p>
                 </div>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="images/advantage-foto/advantage-town-foto-desktop@1x.webp 1x, images/advantage-foto/advantage-town-foto-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="images/advantage-foto/advantage-town-foto-tablet@1x.webp 1x, images/advantage-foto/advantage-town-foto-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="images/advantage-foto/advantage-town-foto.webp 1x, images/advantage-foto/advantage-town-foto.jpg@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="images/advantage-foto/advantage-town-foto-desktop@1x.jpg 1x, images/advantage-foto/advantage-town-foto-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="images/advantage-foto/advantage-town-foto-tablet@1x.jpg 1x, images/advantage-foto/advantage-town-foto-tablet@2x.jpg 2x">
-                  <img class="advantages-item__photo" src="images/advantage-foto/advantage-town-foto.jpg" srcset="images/advantage-foto/advantage-town-foto.jpg@2x.jpg 2x" width="320" height="260"
-                  alt="Вид городка Седона.">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="images/advantage-photo/advantage-town-photo-desktop@1x.webp 1x, images/advantage-photo/advantage-town-photo-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/advantage-photo/advantage-town-photo-tablet@1x.webp 1x, images/advantage-photo/advantage-town-photo-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/advantage-photo/advantage-town-photo.webp 1x, images/advantage-photo/advantage-town-photo.jpg@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="images/advantage-photo/advantage-town-photo-desktop@1x.jpg 1x, images/advantage-photo/advantage-town-photo-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="images/advantage-photo/advantage-town-photo-tablet@1x.jpg 1x, images/advantage-photo/advantage-town-photo-tablet@2x.jpg 2x">
+                  <img class="advantages-item__photo" src="images/advantage-photo/advantage-town-photo.jpg" srcset="images/advantage-photo/advantage-town-photo.jpg@2x.jpg 2x" loading="lazy" width="320" height="260" alt="Вид городка Седона.">
                 </picture>
-
               </div>
-
-            <ul class="advantages-list__sublist additional">
-              <li class="additional__item additional-item additional-item--housing">
+              <ul class="advantages-list__sublist additional-list">
+                <li class="additional-list__item additional-item additional-item--housing">
                   <h3 class="additional-item__title heading">Жилье</h3>
                   <p class="additional-item__description">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
-              </li>
-              <li class="additional__item additional-item additional-item--food additional-item--left-max">
-                  <h3 class="additional-item__title heading heading--position-left">Еда</h3>
-                  <p class="additional-item__description additional-item__description--food-align">Всегда заказывайте фирменный бургер,<br> вы не разочаруетесь!</p>
                 </li>
-              <li class="additional__item additional-item additional-item--gifts additional-item--left-min">
+                <li class="additional-list__item additional-item additional-item--food additional-item--left-max">
+                  <h3 class="additional-item__title heading heading--position-left">Еда</h3>
+                  <p class="additional-item__description additional-item__description--food-align">Всегда заказывайте фирменный бургер, <br> вы не разочаруетесь!</p> <!-- Модификатор align необходим для применения тега <br> в блоках с одним классом на разых расширениях viewport. Чтобы добиться максимального совпадения с макетом. -->
+                </li>
+                <li class="additional-list__item additional-item additional-item--gifts additional-item--left-min">
                   <h3 class="additional-item__title heading heading--position-left">Сувениры</h3>
-                  <p class="additional-item__description additional-item__description--gifts-align">Не только китайского, <br> но и местного производства!</p>
-              </li>
-            </ul>
-          </li>
-
+                  <p class="additional-item__description additional-item__description--gifts-align">Не только китайского, <br> но и местного производства!</p> <!-- Модификатор align необходим для применения тега <br> в блоках с одним классом на разых расширениях viewport. Чтобы добиться максимального совпадения с макетом. -->
+                </li>
+              </ul>
+            </li>
             <li class="advantages-list__item advantages-item">
               <div class="advantages-item__wrapper-group">
                 <div class="advantages-item__card advantage-card advantage-card--key advantages-item__card--order-second">
-                  <h3 class="advantage-card__title heading heading--secondary-color advantage-card__title--devils-bridge-align">Там есть<br> мост дьявола</h3>
+                  <h3 class="advantage-card__title heading heading--secondary-color advantage-card__title--devils-bridge-align">Там есть <br> мост дьявола</h3> <!-- Модификатор align необходим для применения тега <br> в блоках с одним классом на разых расширениях viewport. Чтобы добиться максимального совпадения с макетом. -->
                   <span class="advantage-card__number">— №2 —</span>
-                  <p class="advantage-card__description advantage-card__description--devils-bridge-align">Да, по нему можно пройти!<br> Если вы осмелитесь, конечно</p>
+                  <p class="advantage-card__description advantage-card__description--devils-bridge-align">Да, по нему можно пройти! <br> Если вы осмелитесь, конечно</p> <!-- Модификатор align необходим для применения тега <br> в блоках с одним классом на разых расширениях viewport. Чтобы добиться максимального совпадения с макетом. -->
                 </div>
                 <picture>
-                  <source type="image/webp" media="(min-width: 1200px)" srcset="images/advantage-foto/advantages-bridge-foto-desktop@1x.webp 1x, images/advantage-foto/advantages-bridge-foto-desktop@2x.webp 2x">
-                  <source type="image/webp" media="(min-width: 768px)" srcset="images/advantage-foto/advantages-bridge-foto-tablet@1x.webp 1x, images/advantage-foto/advantages-bridge-foto-tablet@2x.webp 2x">
-                  <source type="image/webp" srcset="images/advantage-foto/advantages-bridge-foto.webp 1x, images/advantage-foto/advantages-bridge-foto@2x.webp 2x">
-                  <source media="(min-width: 1200px)" srcset="images/advantage-foto/advantages-bridge-foto-desktop@1x.jpg 1x, images/advantage-foto/advantages-bridge-foto-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="images/advantage-foto/advantages-bridge-foto-tablet@1x.jpg 1x, images/advantage-foto/advantages-bridge-foto-tablet@2x.jpg 2x">
-                  <img class="advantages-item__photo advantages-item__photo--order-first" src="images/advantage-foto/advantages-bridge-foto.jpg" srcset="images/advantage-foto/advantages-bridge-foto@2x.jpg 2x" width="320"
-                  height="260" alt="Вид на мост Дьявола.">
+                  <source type="image/webp" media="(min-width: 1200px)" srcset="images/advantage-photo/advantages-bridge-photo-desktop@1x.webp 1x, images/advantage-photo/advantages-bridge-photo-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/advantage-photo/advantages-bridge-photo-tablet@1x.webp 1x, images/advantage-photo/advantages-bridge-photo-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="images/advantage-photo/advantages-bridge-photo.webp 1x, images/advantage-photo/advantages-bridge-photo@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="images/advantage-photo/advantages-bridge-photo-desktop@1x.jpg 1x, images/advantage-photo/advantages-bridge-photo-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="images/advantage-photo/advantages-bridge-photo-tablet@1x.jpg 1x, images/advantage-photo/advantages-bridge-photo-tablet@2x.jpg 2x">
+                  <img class="advantages-item__photo advantages-item__photo--order-first" src="images/advantage-photo/advantages-bridge-photo.jpg" srcset="images/advantage-photo/advantages-bridge-photo@2x.jpg 2x" width="320" height="260" loading="lazy" alt="Вид на мост Дьявола.">
                 </picture>
-
               </div>
             </li>
-
             <li class="advantages-list__item advantages-item advantages-list__item--base advantages-item--border-bottom">
-                <h3 class="advantages-item__title advantages-item__title--square-align heading">Небольшая<br> площадь</h3>
-                <span class="advantages-item__number">— №3 —</span>
-                <p class="advantages-item__description">Все интересные места находятся очень близко</p>
+              <h3 class="advantages-item__title advantages-item__title--square-align heading">Небольшая <br> площадь</h3>
+              <span class="advantages-item__number">— №3 —</span>
+              <p class="advantages-item__description">Все интересные места находятся очень близко</p>
             </li>
             <li class="advantages-list__item advantages-item advantages-list__item--base advantages-item--border-bottom">
-                <h3 class="advantages-item__title heading advantages-item__title--road-align">Красивая<br> дорога</h3>
-                <span class="advantages-item__number">— №4 —</span>
-                <p class="advantages-item__description advantages-item__description--road-align">Ехать в Седону из Лас-Вегаса <br> совсем не скучно!</p>
+              <h3 class="advantages-item__title heading advantages-item__title--road-align">Красивая <br> дорога</h3> <!-- Модификатор align необходим для применения тега <br> в блоках с одним классом на разых расширениях viewport. Чтобы добиться максимального совпадения с макетом. -->
+              <span class="advantages-item__number">— №4 —</span>
+              <p class="advantages-item__description advantages-item__description--road-align">Ехать в Седону из Лас-Вегаса <br> совсем не скучно!</p> <!-- Модификатор align необходим для применения тега <br> в блоках с одним классом на разых расширениях viewport. Чтобы добиться максимального совпадения с макетом. -->
             </li>
             <li class="advantages-list__item advantages-item advantages-list__item--base">
-                <h3 class="advantages-item__title heading advantages-item__title--tourists-align">Мало<br> туристов</h3>
-                <span class="advantages-item__number">— №5 —</span>
-                <p class="advantages-item__description advantages-item__description--tourists-align">Большинство едет в Гранд каньон <br> и толпится там</p>
+              <h3 class="advantages-item__title heading advantages-item__title--tourists-align">Мало <br> туристов</h3> <!-- Модификатор align необходим для применения тега <br> в блоках с одним классом на разых расширениях viewport. Чтобы добиться максимального совпадения с макетом. -->
+              <span class="advantages-item__number">— №5 —</span>
+              <p class="advantages-item__description advantages-item__description--tourists-align">Большинство едет в Гранд каньон <br> и толпится там</p> <!-- Модификатор align необходим для применения тега <br> в блоках с одним классом на разых расширениях viewport. Чтобы добиться максимального совпадения с макетом. -->
             </li>
           </ol>
         </div>
-    </section>
+      </section>
 
-    <section class="search-section">
-        <h3 class="search-section__title heading heading--large-size">Заинтересовались?</h3>
-        <p class="search-section__description">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+      <section class="search-section">
+        <h2 class="search-section__title heading heading--large-size">Заинтересовались?</h2>
+        <p class="search-section__description">Укажите предполагаемые даты поездки, <br> и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a class="search-section__button button button--block" href="#">Найти гостиницу</a>
-    </section>
-
-    <section class="map-tablet">
-      <div class="map-tablet__wrapper">
-        <h3 class="visually-hidden">Карта местности</h3>
-      <iframe class="map-tablet__map map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d351797.02659760736!2d-111.84828939602158!3d34.99584438889975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1660807334258!5m2!1sru!2sru"
+      </section>
+      <section class="map-tablet">
+        <h2 class="visually-hidden">Карта местности</h2>
+        <iframe class="map-tablet__map map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d351797.02659760736!2d-111.84828939602158!3d34.99584438889975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCA4NjMzNiwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1660807334258!5m2!1sru!2sru"
         width="320"
         height="350"
         allowfullscreen=""
         title="Интерактивная карта с обозначением местоположения Седоны."
         loading="lazy"
         referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
-    </div>
-  </section>
-</main>
-
-  <footer class="page-footer">
-    <div class="page-footer__wrapper">
-
-      <section class="page-footer__hashtag hashtag">
-        <h3 class="visually-hidden">Хэштег visitsedona</h3>
-        <a class="hashtag__link" href="https://twitter.com/hashtag/visitsedona">#Visitsedona&nbsp;</a>
+        </iframe>
       </section>
+    </main>
 
-      <section class="page-footer__social social">
-        <h3 class="visually-hidden">Мы в соцсетях</h3>
-        <ul class="social__list">
-          <li class="social__item">
-            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-              <svg class="social__item-image" width="24" height="14" aria-hidden="true" focusable="false" aria-label="Мы в Контакте.">
-                <use href="images/sprite.svg#social-icon-vkontakte"></use>
-              </svg>
-              <span class="visually-hidden">В контакте</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-              <svg class="social__item-image" width="22" height="18" aria-hidden="true" focusable="false" aria-label="Мы в Телеграм.">
-                <use href="images/sprite.svg#social-icon-telegram"></use>
-              </svg>
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="social__item">
-            <a class="social__link social__link--youtube" href="www.youtube.com/user/htmlacademyru">
-              <svg class="social__item-image" width="20" height="14" aria-hidden="true" focusable="false" aria-label="Мы в Ютуб.">
-                <use href="images/sprite.svg#social-icon-youtube"></use>
-              </svg>
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="page-footer__copyright copyright">
-        <h3 class="visually-hidden">Логотип разработчика сайта</h3>
-        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive">
+    <footer class="page-footer">
+      <a class="page-footer__link-hashtag hashtag" href="https://twitter.com/hashtag/visitsedona">#Visitsedona&nbsp;</a>
+      <ul class="page-footer__social-list social">
+        <li class="social__item">
+          <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+            <svg class="social__item-image" width="24" height="14" aria-hidden="true" focusable="false" aria-label="Мы в Контакте.">
+              <use href="images/sprite.svg#social-icon-vkontakte"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+            <svg class="social__item-image" width="22" height="18" aria-hidden="true" focusable="false" aria-label="Мы в Телеграм.">
+              <use href="images/sprite.svg#social-icon-telegram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="www.youtube.com/user/htmlacademyru">
+            <svg class="social__item-image" width="20" height="14" aria-hidden="true" focusable="false" aria-label="Мы в Ютуб.">
+              <use href="images/sprite.svg#social-icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+      <div class="page-footer__copyright copyright">
+        <a class="copyright__logo" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
           <span class="copyright__description">Разработано</span>
           <svg class="copyright__logo-image" width="27" height="35" focusable="false" aria-label="Сайт html Academy">
             <use href="images/sprite.svg#htmlacademy-icon"></use>
           </svg>
-          <span class="visually-hidden">Логотип html Academy</span>
         </a>
-      </section>
-    </div>
-  </footer>
-</div>
-<script src="./js/script.min.js"></script>
+      </div>
+    </footer>
+  </div>
+  <script src="./js/script.min.js"></script>
 </body>
 </html>

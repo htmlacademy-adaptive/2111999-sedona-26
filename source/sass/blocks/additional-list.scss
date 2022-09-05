@@ -1,12 +1,12 @@
-.additional {
+.additional-list {
   list-style-type: none;
   display: grid;
   gap: 22px;
-  padding: 23px 18px 52px 18px;
+  padding: 23px 12px 52px 18px;
 }
 
 @media (min-width: $tablet-width) {
-  .additional {
+  .additional-list {
     grid-template-columns: repeat(3, 1fr);
     padding: 0;
     gap: 0;

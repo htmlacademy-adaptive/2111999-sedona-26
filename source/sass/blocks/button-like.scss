@@ -8,12 +8,12 @@
 }
 
 .button-like__icon {
-  fill: rgba($base-support, 0.3);
+  fill: $button-like-base;
 }
 
 @media (min-width: $desktop-width) {
   .button-like__icon {
-    fill: $background-base;
+    fill: $button-like-secondary;
   }
 }
 
@@ -24,4 +24,3 @@
 .button-like:active .button-like__icon {
   opacity: 0.6;
 }
-

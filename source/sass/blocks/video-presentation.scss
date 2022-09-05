@@ -1,17 +1,17 @@
-.video-presentation__wrapper {
+.video-presentation {
   padding-top: 17px;
   padding-left: 20px;
   padding-right: 20px;
 }
 
 @media (min-width: $tablet-width) {
-  .video-presentation__wrapper {
+  .video-presentation {
     padding: 56px 60px 40px 60px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .video-presentation__wrapper {
+  .video-presentation {
     padding-top: 61px;
     padding-left: 199px;
     padding-right: 201px;
@@ -60,7 +60,6 @@
     display: none;
   }
 }
-
 
 .video-presentation__video-content {
   position: relative;

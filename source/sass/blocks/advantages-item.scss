@@ -8,6 +8,8 @@
   display: block;
   height: 100%;
   object-fit: cover;
+  background-color: $background-secondary;
+  width: 320px;
 }
 
 @media (min-width: $tablet-width) {
@@ -31,6 +33,7 @@
 .advantages-item__wrapper-group {
   @media (min-width: $tablet-width) {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 

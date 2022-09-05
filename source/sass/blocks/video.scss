@@ -28,7 +28,6 @@
   opacity: 0.6;
 }
 
-
 @media (min-width: $tablet-width) {
   .video__button {
     top: 223px;
@@ -46,12 +45,13 @@
   display: block;
   width: 100%;
   min-height: 177px;
-  background-image: url("../images/catalog-foto-gallery/video-poster-sedona.jpg");
+  background-image: url("../images/catalog-photo-gallery/video-poster-sedona.jpg");
   background-repeat: no-repeat;
   background-position: center;
+  background-color: #f2f2f2;
 
   @media (min-resolution: 2dppx) {
-    background-image: url("../images/catalog-foto-gallery/video-poster-sedona@2x.jpg");
+    background-image: url("../images/catalog-photo-gallery/video-poster-sedona@2x.jpg");
     background-size: 280px auto;
   }
 }
@@ -59,10 +59,10 @@
 @media (min-width: $tablet-width) {
   .video__player {
     min-height: 500px;
-    background-image: url("../images/catalog-foto-gallery/video-poster-sedona-tablet@1x.jpg");
+    background-image: url("../images/catalog-photo-gallery/video-poster-sedona-tablet@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../images/catalog-foto-gallery/video-poster-sedona-tablet@2x.jpg");
+      background-image: url("../images/catalog-photo-gallery/video-poster-sedona-tablet@2x.jpg");
       background-size: 648px auto;
     }
   }
@@ -70,12 +70,11 @@
 
 @media (min-width: $desktop-width) {
   .video__player {
-    background-image: url("../images/catalog-foto-gallery/video-poster-sedona-desktop@1x.jpg");
+    background-image: url("../images/catalog-photo-gallery/video-poster-sedona-desktop@1x.jpg");
 
     @media (min-resolution: 2dppx) {
-      background-image: url("../images/catalog-foto-gallery/video-poster-sedona-desktop@2x.jpg");
+      background-image: url("../images/catalog-photo-gallery/video-poster-sedona-desktop@2x.jpg");
       background-size: 800px auto;
     }
   }
 }
-

@@ -5,9 +5,9 @@
   bottom: 0;
   right: 0;
   margin: auto;
-  display: flex;
-  flex-direction: column;
-  flex-grow: 1;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  min-height: 100%;
   background-color: $background-base;
 
   @media (min-width: $tablet-width) {
