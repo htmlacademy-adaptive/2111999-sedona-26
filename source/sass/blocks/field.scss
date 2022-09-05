@@ -1,6 +1,3 @@
-.field {
-  width: 280px;
-}
 
 @media (min-width: $desktop-width) {
   .field--name {
@@ -36,14 +33,14 @@
 .field__field-input:focus {
   outline: none;
   background: $input-secondary-active;
-  border: 4px solid $input-base-hover;
+  border: 4px solid $input-border-active;
 }
 
 .field__field-input:active {
-  outline: none;
   background: $input-secondary-active;
-  border: 4px solid $input-base-hover;
+  border: 4px solid $input-border-active;
 }
+
 
 .field__field-input:disabled {
   background: #b7b4b4;

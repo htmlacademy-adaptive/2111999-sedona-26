@@ -33,7 +33,6 @@
   background: #e5e5e5;
 }
 
-
 @media (min-width: $tablet-width) {
   .field-group::before {
     display: none;
@@ -54,20 +53,17 @@
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .field-group--name {
     padding-bottom: 15px;
   }
 }
 
-
 @media (min-width: $tablet-width) {
   .field-group--contacts {
     padding-bottom: 15px;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .field-group--radio {
@@ -104,7 +100,6 @@
     margin-bottom: 49px;
   }
 }
-
 
 .field-group__title {
   margin: 0;
@@ -192,7 +187,6 @@
     padding-right: 44px;
   }
 }
-
 
 @media (min-width: $tablet-width) {
   .field-group__title--decorated-line {

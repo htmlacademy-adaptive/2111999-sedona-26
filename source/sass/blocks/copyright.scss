@@ -1,15 +1,3 @@
-.copyright {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-}
-
-.copyright__description {
-  font: inherit;
-  margin: 0;
-}
-
 .copyright__logo {
   color: $text-base;
   display: flex;
@@ -19,8 +7,6 @@
 
 .copyright__logo-image {
   fill: currentColor;
-  width: 100%;
-  min-height: 34px;
   margin-left: 13px;
 }
 
@@ -31,4 +17,3 @@
 .copyright__logo:active {
   color: $text-base-active;
 }
-

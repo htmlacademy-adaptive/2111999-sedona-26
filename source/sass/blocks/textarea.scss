@@ -2,7 +2,7 @@
   margin: 0;
 }
 
-.textarea__textarea-field {
+.textarea__textarea-input {
   padding: 13px 16px 16px 12px;
   width: 279px;
   min-height: 150px;
@@ -18,31 +18,30 @@
   }
 }
 
-.textarea__textarea-field:hover {
+.textarea__textarea-input:hover {
   background: $input-base-hover;
 }
 
-.textarea__textarea-field:focus {
+.textarea__textarea-input:focus {
   background-color: $input-secondary-active;
   border: 4px solid #e5e5e5;
   outline: none;
 }
 
-.textarea__textarea-field:active {
+.textarea__textarea-input:active {
   background-color: $input-secondary-active;
   border: 4px solid #e5e5e5;
-  outline: none;
 }
 
 @media (min-width: $tablet-width) {
-  .textarea__textarea-field {
+  .textarea__textarea-input {
     width: 648px;
     min-height: 160px;
   }
 }
 
 @media (min-width: $desktop-width) {
-  .textarea__textarea-field {
+  .textarea__textarea-input {
     width: 768px;
     min-height: 160px;
     display: block;
